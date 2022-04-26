@@ -12,13 +12,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class FragmentHome extends Fragment {
-    private RecyclerView rvQueen;
-    private ArrayList<SetGetKategori> list = new ArrayList<>();
+    private RecyclerView rvKategori,rvAkhirBulan;
+    private ArrayList<SetGetKategori> listKategori = new ArrayList<>();
+    private ArrayList<SetGetAkhirBulan> listAkhirBulan = new ArrayList<>();
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,19 +40,34 @@ public class FragmentHome extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 //        rvQueen = getActivity().findViewById(R.id.rv_data_kategori);
-        rvQueen = view.findViewById(R.id.rv_data_kategori);
-        rvQueen.setHasFixedSize(true);
-        list.addAll(DataKategori.getListData());
-        showRecyclerList();
-        rvQueen.setLayoutManager(new LinearLayoutManager(view.getContext(), RecyclerView.HORIZONTAL, false));
+        rvKategori = view.findViewById(R.id.rv_data_kategori);
+        rvKategori.setHasFixedSize(true);
+        rvAkhirBulan = view.findViewById(R.id.rv_data_akhir_bulan);
+        rvAkhirBulan.setHasFixedSize(true);
+//        listAkhirBulan.addAll(DataAkhirBulan.getListAkhirBulan());
+        listAkhirBulan.addAll(DataAkhirBulan.getListAkhirBulan());
+        listKategori.addAll(DataKategori.getListData());
+        showRecyclerListKategori();
+        showRecyclerListAkhirBulan();
+        rvKategori.setLayoutManager(new LinearLayoutManager(view.getContext(), RecyclerView.HORIZONTAL, false));
+        rvAkhirBulan.setLayoutManager(new LinearLayoutManager(view.getContext(), RecyclerView.HORIZONTAL, false));
     }
 
-    private void showRecyclerList(){
-        DataKategoriAdapter KategoriAdapter = new DataKategoriAdapter(list);
-        rvQueen.setAdapter(KategoriAdapter);
+    private void showRecyclerListKategori(){
+        DataKategoriAdapter KategoriAdapter = new DataKategoriAdapter(listKategori);
+        rvKategori.setAdapter(KategoriAdapter);
         KategoriAdapter.setOnItemClickCallback(new DataKategoriAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(SetGetKategori data) {
+            }
+        });
+    }
+    private void showRecyclerListAkhirBulan(){
+        DataAkhirBulanAdapter AkhirBulanAdapter = new DataAkhirBulanAdapter(listAkhirBulan);
+        rvAkhirBulan.setAdapter(AkhirBulanAdapter);
+        AkhirBulanAdapter.setOnItemClickCallback(new DataAkhirBulanAdapter.OnItemClickCallback() {
+            @Override
+            public void onItemClicked(SetGetAkhirBulan data) {
 
             }
         });
