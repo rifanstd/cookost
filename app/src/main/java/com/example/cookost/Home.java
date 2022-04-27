@@ -23,16 +23,21 @@ public class Home extends AppCompatActivity {
     ImageView sidebarIcon, profilePhoto;
     private Toolbar toolbar;
     BottomNavigationView bottomNavigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        sidebarIcon =  findViewById(R.id.icon_sidebar);
+
         profilePhoto = findViewById(R.id.profile_photo);
         toolbar = findViewById(R.id.cookost_toolbar);
+
         setSupportActionBar(toolbar);
+
         bottomNavigationView = findViewById(R.id.bottomNavigationView2);
+
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_container,new FragmentHome()).commit();
+
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -48,34 +53,10 @@ public class Home extends AppCompatActivity {
                         selectedFragment = new FragmentUpload();
                         break;
                 }
+              
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_container,selectedFragment).commit();
                 return true;
             }
         });
-
-//        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-//        rvQueen = findViewById(R.id.rv_data_kategori);
-//        rvQueen.setHasFixedSize(true);
-//        list.addAll(DataKategori.getListData());
-//        showRecyclerList();
-//        rvQueen.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
-//        profilePhoto.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(Home.this,"Clicked Profile",Toast.LENGTH_SHORT).show();
-//            }
-//        });
     }
-//    private void showRecyclerList(){
-//        rvQueen.setLayoutManager(new LinearLayoutManager(this));
-//        DataKategoriAdapter KategoriAdapter = new DataKategoriAdapter(list);
-//        rvQueen.setAdapter(KategoriAdapter);
-//        KategoriAdapter.setOnItemClickCallback(new DataKategoriAdapter.OnItemClickCallback() {
-//            @Override
-//            public void onItemClicked(SetGetKategori data) {
-//
-//            }
-//        });
-//    }
-
 }

@@ -15,7 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
-            android:text="SETTING"
+
+            android:text="Setting"
             android:textColor="@color/kuning"
             android:textSize="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -23,5 +24,127 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.131" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.146">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="344dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@id/tableLayout2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:id="@+id/iconAccount"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/ic_profile" />
+
+                        <TextView
+                            android:id="@+id/tvAccount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="12"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Account"
+                            android:textColor="@color/kuning"
+                            android:textSize="16dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/gotoAccount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                            android:layout_gravity="right"
+                            />
+                    </TableRow>
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/kuning"
+                        android:layout_marginTop="3dp"/>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="344dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tableLayout1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:id="@+id/iconLogout"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/ic_baseline_logout_24" />
+
+                        <TextView
+                            android:id="@+id/tvLogout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="12"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Logout"
+                            android:textColor="@color/kuning"
+                            android:textSize="16dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/gotoLogout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                            android:layout_gravity="right"
+                            />
+                    </TableRow>
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/kuning"
+                        android:layout_marginTop="3dp"/>
+                </TableLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

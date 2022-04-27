@@ -22,24 +22,27 @@ public class Login extends AppCompatActivity {
         belumPunyaAkun = (TextView) findViewById(R.id.tv_belum_punya_akun);
         email = (EditText) findViewById(R.id.edt_email);
         password = (EditText) findViewById(R.id.edt_password);
+
         belumPunyaAkun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switchActivitiesToRegister();
             }
         });
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switchActivitiesToHome();
-
             }
         });
     }
+
     private void switchActivitiesToHome() {
         Intent i = new Intent(this, Home.class);
         startActivity(i);
     }
+
     private void switchActivitiesToRegister() {
         Intent i = new Intent(this, Register.class);
         startActivity(i);

@@ -10,11 +10,18 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp">
 
-        <ImageView
-            android:id="@+id/icon_sidebar"
+
+        <TextView
+            android:id="@+id/title_apk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_sidebar"/>
+            android:text="CooKost"
+            android:textColor="@color/kuning"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            />
+
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_photo"
