@@ -13,6 +13,7 @@ import android.widget.TableLayout;
 
 public class FragmentSetting extends Fragment {
     TableLayout tableLayout1, tableLayout2;
+  
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
