@@ -2,22 +2,15 @@ package com.example.cookost;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-
-import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
     ImageView sidebarIcon, profilePhoto;
@@ -50,7 +43,7 @@ public class Home extends AppCompatActivity {
                         selectedFragment = new FragmentSetting();
                         break;
                     case R.id.nav_upload:
-                        selectedFragment = new FragmentUpload();
+                        selectedFragment = new FragmentProfile();
                         break;
                 }
               
