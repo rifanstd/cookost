@@ -2593,6 +2593,7 @@ font poppins_regular
 font poppins_thin
 id ALT
 id Account
+id ArrowBack
 id BOTTOM_END
 id BOTTOM_START
 id CTRL

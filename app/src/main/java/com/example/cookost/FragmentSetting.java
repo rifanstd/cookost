@@ -33,8 +33,15 @@ public class FragmentSetting extends Fragment {
 
         tableLayout1 = view.findViewById(R.id.Account);
         tableLayout2 = view.findViewById(R.id.Logout);
-        arrowback = view.findViewById(R.id.backFromSetting);
 
+        arrowback = view.findViewById(R.id.backFromSetting);
+        arrowback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Home.class);
+                getActivity().startActivity(intent);
+            }
+        });
         tableLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,12 +58,6 @@ public class FragmentSetting extends Fragment {
             }
         });
 
-        arrowback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Home.class);
-                getActivity().startActivity(intent);
-            }
-        });
+
     }
 }

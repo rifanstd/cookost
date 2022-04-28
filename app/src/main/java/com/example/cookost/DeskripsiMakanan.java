@@ -1,7 +1,10 @@
 package com.example.cookost;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -9,6 +12,7 @@ public class DeskripsiMakanan extends AppCompatActivity {
     private ImageView fotoMakanan;
     private ImageView fotoPengupload;
     private TextView judul, deskripsi,bahan, langkah, namaPengupload, lokasiPengupload;
+    ImageView arrowback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,5 +44,16 @@ public class DeskripsiMakanan extends AppCompatActivity {
         deskripsi.setText(DESC);
         bahan.setText(BAHAN);
         langkah.setText(LANGKAH);
+        arrowback = findViewById(R.id.ArrowBack);
+        arrowback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switchActivitiesToHome();
+            }
+        });
+    }
+    private void switchActivitiesToHome() {
+        Intent i = new Intent(this, Home.class);
+        startActivity(i);
     }
 }
