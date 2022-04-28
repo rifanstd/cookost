@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -23,7 +24,6 @@ public class FragmentSetting extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_setting, container, false);
-
         return view;
     }
 
@@ -34,8 +34,6 @@ public class FragmentSetting extends Fragment {
         tableLayout1 = view.findViewById(R.id.tableLayout1);
         tableLayout2 = view.findViewById(R.id.tableLayout2);
         arrowback = view.findViewById(R.id.backFromSetting);
-
-
 
         tableLayout1.setOnClickListener(new View.OnClickListener() {
             @Override

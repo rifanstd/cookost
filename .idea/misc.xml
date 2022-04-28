@@ -31,18 +31,22 @@
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/ic_baseline_arrow_back_ios_new_24.xml" value="0.1475" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.1475" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.1475" />
+        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/image_edit.xml" value="0.1495" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/photo_in_profile.xml" value="0.1475" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/activity_register.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/fragment_home.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/fragment_profile.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/fragment_setting.xml" value="0.25" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/fragment_upload.xml" value="0.25" />
+        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/fragment_upload.xml" value="0.2" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/list_akhir_bulan.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/toolbar.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/toolbar_desc.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/toolbar_profile.xml" value="0.2" />
         <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/toolbar_setting.xml" value="0.21" />
+        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/toolbar_upload.xml" value="0.17074275362318841" />
       </map>
     </option>
   </component>
