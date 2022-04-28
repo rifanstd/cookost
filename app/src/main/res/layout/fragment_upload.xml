@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -95,7 +95,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Resep"
+                    android:text="Bahan"
                     android:fontFamily="@font/poppins_bold"
                     android:layout_margin="10dp"
                     android:textColor="@color/kuning"
@@ -103,6 +103,7 @@
                     />
 
                 <EditText
+                    android:id="@+id/edt_bahan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="150dp"
@@ -113,12 +114,65 @@
                     android:background="@drawable/edit_text_profile"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="Tuliskan resep anda disini. Tuliskan bahan, alat dan cara pembuatan."
+                    android:hint="Tuliskan bahan resep anda disini."
                     android:fontFamily="@font/poppins_regular"
                     android:textSize="16sp"
                     android:padding="10dp"
                     />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alat"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/kuning"
+                    android:textSize="16sp"
+                    />
 
+                <EditText
+                    android:id="@+id/edt_alat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="150dp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:singleLine="false"
+                    android:gravity="left"
+                    android:scrollHorizontally="false"
+                    android:background="@drawable/edit_text_profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Tuliskan alat yang digunakan pada resep anda disini. "
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Langkah"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/kuning"
+                    android:textSize="16sp"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_langkah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="150dp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:singleLine="false"
+                    android:gravity="left"
+                    android:scrollHorizontally="false"
+                    android:background="@drawable/edit_text_profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Tuliskan Langkah-langkah yang digunakan pada resep anda disini. "
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    />
                 <Button
                     android:id="@+id/btn_upload_resep"
                     android:layout_width="wrap_content"
@@ -137,4 +191,4 @@
 
     </LinearLayout>
 
-</FrameLayout>
+</ScrollView>

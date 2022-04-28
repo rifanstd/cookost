@@ -14,7 +14,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tv_item_nama_akhir_bulan"
+        android:id="@+id/tv_item_makanan"
         android:layout_width="74dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -30,7 +30,7 @@
         app:layout_constraintVertical_bias="0.506" />
 
     <ImageView
-        android:id="@+id/img_item_akhir_bulan"
+        android:id="@+id/img_item_makanan"
         android:layout_width="88dp"
         android:layout_height="82dp"
         android:layout_gravity="right"

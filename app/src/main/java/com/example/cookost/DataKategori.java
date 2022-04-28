@@ -8,6 +8,7 @@ public class DataKategori {
             R.drawable.kat_makanan_ringan,
             R.drawable.kat_kere_hore
     };
+
     private static String[] NamaKategori ={
             "Makanan Hangat",
             "Makanan Ringan",

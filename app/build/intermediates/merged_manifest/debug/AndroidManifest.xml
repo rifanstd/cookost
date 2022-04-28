@@ -20,6 +20,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.Cookost" >
         <activity
+            android:name="com.example.cookost.DeskripsiMakanan"
+            android:exported="false" />
+        <activity
+            android:name="com.example.cookost.Profile"
+            android:exported="false" />
+        <activity
             android:name="com.example.cookost.Home"
             android:exported="false" />
         <activity

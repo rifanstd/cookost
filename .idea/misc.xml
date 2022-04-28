@@ -11,42 +11,29 @@
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/drawable/ic_home.xml" value="0.1" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/drawable/ic_setting.xml" value="0.1" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/drawable/ic_upload.xml" value="0.2785" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_deskripsi_makanan.xml" value="0.2565789473684211" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_home.xml" value="0.300561797752809" />
-        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
-        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_register.xml" value="0.3625" />
-        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_profile.xml" value="0.3625" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_register.xml" value="0.2948717948717949" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/fragment_profile.xml" value="0.2625" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/fragment_setting.xml" value="0.33" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/fragment_upload.xml" value="0.3484375" />
-        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/list_akhir_bulan.xml" value="0.1" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/list_akhir_bulan.xml" value="0.33" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/list_kategori.xml" value="0.3625" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/list_khusus_akhir_bulan.xml" value="0.33" />
-        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/toolbar.xml" value="0.3625" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/list_makanan.xml" value="0.3151041666666667" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/toolbar.xml" value="0.22" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/toolbar_deslripsi.xml" value="0.3151041666666667" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/toolbar_lain.xml" value="0.25" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/toolbar_profile.xml" value="0.3625" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/toolbar_setting.xml" value="0.3625" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/toolbar_upload.xml" value="0.3625" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/menu/cookost_bottom_menu.xml" value="0.3625" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/menu/toolbar_lain.xml" value="0.3625" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable-v24/ic_profile.xml" value="0.1475" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/bg_button.xml" value="0.1495" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/edit_text_profile.xml" value="0.1475" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/ic_baseline_arrow_back_ios_new_24.xml" value="0.1475" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.1475" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.1475" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/image_edit.xml" value="0.1495" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/drawable/photo_in_profile.xml" value="0.1475" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/activity_home.xml" value="0.22" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/activity_login.xml" value="0.2" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/activity_register.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/fragment_home.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/fragment_profile.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/fragment_setting.xml" value="0.25" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/fragment_upload.xml" value="0.2" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/list_akhir_bulan.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/toolbar.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/toolbar_desc.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/toolbar_profile.xml" value="0.2" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/toolbar_setting.xml" value="0.21" />
-        <entry key="..\:/Users/user/Documents/Github/cookost/app/src/main/res/layout/toolbar_upload.xml" value="0.17074275362318841" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/xml/root_preferences.xml" value="0.327445652173913" />
       </map>
     </option>
   </component>

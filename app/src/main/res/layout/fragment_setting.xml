@@ -50,11 +50,11 @@
                 android:layout_height="match_parent">
 
                 <TableLayout
-                    android:id="@+id/tableLayout1"
+                    android:id="@+id/Account"
                     android:layout_width="344dp"
                     android:layout_height="50dp"
                     android:orientation="horizontal"
-                    app:layout_constraintBottom_toTopOf="@id/tableLayout2"
+                    app:layout_constraintBottom_toTopOf="@id/Logout"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
@@ -101,7 +101,7 @@
                 </TableLayout>
 
                 <TableLayout
-                    android:id="@+id/tableLayout2"
+                    android:id="@+id/Logout"
                     android:layout_width="344dp"
                     android:layout_height="50dp"
                     android:orientation="horizontal"
@@ -109,7 +109,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tableLayout1">
+                    app:layout_constraintTop_toBottomOf="@id/Account">
 
                     <TableRow
                         android:layout_width="wrap_content"

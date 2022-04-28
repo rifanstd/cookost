@@ -14,34 +14,34 @@ import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 
-public class DataAkhirBulanAdapter extends RecyclerView.Adapter<DataAkhirBulanAdapter.ListViewHolder>{
-    private ArrayList<SetGetAkhirBulan> listAkhirBulan;
+public class DataMakananAdapter extends RecyclerView.Adapter<DataMakananAdapter.ListViewHolder>{
+    private ArrayList<SetGetMakanan> listMakanan;
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_akhir_bulan, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_makanan, parent, false);
         return new ListViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ListViewHolder holder, int position) {
-        SetGetAkhirBulan iu = listAkhirBulan.get(position);
+        SetGetMakanan iu = listMakanan.get(position);
         Glide.with(holder.itemView.getContext())
-                .load(iu.getFotoAkhirBulan())
+                .load(iu.getFotoMakanan())
                 .apply(new RequestOptions().override(500, 500))
-                .into(holder.imgAkhirBulan);
-        holder.tvNamaAkhirBulan.setText(iu.getNamaAkhirBulan());
+                .into(holder.imgMakanan);
+        holder.tvNamaMakanan.setText(iu.getNamaMakanan());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onItemClickCallback.onItemClicked(listAkhirBulan.get(holder.getAdapterPosition()));
+                onItemClickCallback.onItemClicked(listMakanan.get(holder.getAdapterPosition()));
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return listAkhirBulan.size();
+        return listMakanan.size();
     }
 
     private OnItemClickCallback onItemClickCallback;
@@ -51,20 +51,20 @@ public class DataAkhirBulanAdapter extends RecyclerView.Adapter<DataAkhirBulanAd
     }
 
     public class ListViewHolder extends RecyclerView.ViewHolder {
-        ImageView imgAkhirBulan;
-        TextView tvNamaAkhirBulan;
+        ImageView imgMakanan;
+        TextView tvNamaMakanan;
 
         ListViewHolder(View itemView) {
             super(itemView);
-            imgAkhirBulan = itemView.findViewById(R.id.img_item_akhir_bulan);
-            tvNamaAkhirBulan = itemView.findViewById(R.id.tv_item_nama_akhir_bulan);
+            imgMakanan = itemView.findViewById(R.id.img_item_makanan);
+            tvNamaMakanan = itemView.findViewById(R.id.tv_item_makanan);
         }
     }
 
-    public DataAkhirBulanAdapter(ArrayList<SetGetAkhirBulan> list) {
-        this.listAkhirBulan = list;
+    public DataMakananAdapter(ArrayList<SetGetMakanan> list) {
+        this.listMakanan = list;
     }
     public interface OnItemClickCallback {
-        void onItemClicked(SetGetAkhirBulan data);
+        void onItemClicked(SetGetMakanan data);
     }
 }

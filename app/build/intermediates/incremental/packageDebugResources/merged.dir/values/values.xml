@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="list_who">
+        <item>Mahasiswa</item>
+        <item>Pekerja Kantoran</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="kuning">#FFB72B</color>
     <color name="purple_200">#FFBB86FC</color>

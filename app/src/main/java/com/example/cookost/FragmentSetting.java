@@ -31,14 +31,14 @@ public class FragmentSetting extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        tableLayout1 = view.findViewById(R.id.tableLayout1);
-        tableLayout2 = view.findViewById(R.id.tableLayout2);
+        tableLayout1 = view.findViewById(R.id.Account);
+        tableLayout2 = view.findViewById(R.id.Logout);
         arrowback = view.findViewById(R.id.backFromSetting);
 
         tableLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Account.class);
+                Intent intent = new Intent(getActivity(), Profile.class);
                 getActivity().startActivity(intent);
             }
         });

@@ -1,27 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentUpload">
+    tools:context=".UploadFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="UPLOAD"
-            android:textSize="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="0dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <include
+            android:id="@+id/toolbarUpload"
+            layout="@layout/toolbar_upload"/>
 
-</FrameLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:text="Tambahkan Gambar"
+                    android:gravity="center"
+                    android:background="@color/kuning"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/kuning"
+                    />
+
+                <EditText
+                    android:id="@+id/input_nama_resep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan nama resep"
+                    android:textColorHint="@color/kuning"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:padding="15dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edit_text_profile"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/kuning"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/kuning"
+                    android:textSize="16sp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:singleLine="false"
+                    android:gravity="left"
+                    android:scrollHorizontally="false"
+                    android:background="@drawable/edit_text_profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Tuliskan deskripsi singkat resep anda"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/kuning"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bahan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/kuning"
+                    android:textSize="16sp"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_bahan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="150dp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:singleLine="false"
+                    android:gravity="left"
+                    android:scrollHorizontally="false"
+                    android:background="@drawable/edit_text_profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Tuliskan bahan resep anda disini."
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alat"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/kuning"
+                    android:textSize="16sp"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_alat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="150dp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:singleLine="false"
+                    android:gravity="left"
+                    android:scrollHorizontally="false"
+                    android:background="@drawable/edit_text_profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Tuliskan alat yang digunakan pada resep anda disini. "
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Langkah"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/kuning"
+                    android:textSize="16sp"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_langkah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="150dp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:singleLine="false"
+                    android:gravity="left"
+                    android:scrollHorizontally="false"
+                    android:background="@drawable/edit_text_profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Tuliskan Langkah-langkah yang digunakan pada resep anda disini. "
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    />
+                <Button
+                    android:id="@+id/btn_upload_resep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:background="@drawable/bg_button"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
