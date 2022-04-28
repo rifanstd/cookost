@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbarProfil"
+            layout="@layout/toolbar_profile"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manage Your Account"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/kuning"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <TextView
+                    android:id="@+id/descTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manage your photo, name, bio and other to complete your account"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/kuning"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/rifan"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="@color/kuning"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/kuning"
+                    android:hint="rifanstd"
+                    android:textColorHint="@color/kuning"
+                    android:textSize="13sp"
+                    android:background="@drawable/edit_text_profile"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/kuning"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/kuning"
+                    android:hint="Rifan Setiadi"
+                    android:textColorHint="@color/kuning"
+                    android:textSize="13sp"
+                    android:background="@drawable/edit_text_profile"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <TextView
+                    android:id="@+id/tv_who"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Who"
+                    android:textColor="@color/kuning"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_who"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_profile"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bio"
+                    android:textColor="@color/kuning"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:id="@+id/edt_bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/kuning"
+                    android:hint="Ganteng Saya"
+                    android:textColorHint="@color/kuning"
+                    android:textSize="13sp"
+                    android:background="@drawable/edit_text_profile"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/instagram"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/edt_instagram"
+                            android:layout_width="311dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_profile"
+                            android:hint="instagram.com/rifanstd"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:textColorHint="@color/kuning"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/poppins_regular"/>
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/facebook"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/edt_facebook"
+                            android:layout_width="311dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_profile"
+                            android:hint="facebook.com/rifanstd"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:textColorHint="@color/kuning"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/poppins_regular"/>
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:background="@drawable/bg_button"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

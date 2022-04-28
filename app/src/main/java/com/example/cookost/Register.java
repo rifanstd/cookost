@@ -22,12 +22,14 @@ public class Register extends AppCompatActivity {
         username = (EditText) findViewById(R.id.edt_username);
         register = (Button) findViewById(R.id.btn_register);
         sudahPunyaAkun = (TextView) findViewById(R.id.tv_sudah_punya_akun);
+
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switchActivitiesToHome();
             }
         });
+
         sudahPunyaAkun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,10 +37,12 @@ public class Register extends AppCompatActivity {
             }
         });
     }
+
     private void switchActivitiesToLogin() {
         Intent i = new Intent(this, Login.class);
         startActivity(i);
     }
+
     private void switchActivitiesToHome() {
         Intent i = new Intent(this, Home.class);
         startActivity(i);
