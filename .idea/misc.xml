@@ -12,6 +12,7 @@
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/drawable/ic_setting.xml" value="0.1" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/drawable/ic_upload.xml" value="0.2785" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_deskripsi_makanan.xml" value="0.22" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_detail_kategori.xml" value="0.22" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_home.xml" value="0.300561797752809" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
@@ -20,7 +21,7 @@
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/fragment_profile.xml" value="0.2625" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/fragment_setting.xml" value="0.33" />
-        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/fragment_upload.xml" value="0.3484375" />
+        <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/fragment_upload.xml" value="0.25" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/list_akhir_bulan.xml" value="0.33" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/list_kategori.xml" value="0.3625" />
         <entry key="..\:/Project android/uts/cookost/app/src/main/res/layout/list_khusus_akhir_bulan.xml" value="0.33" />

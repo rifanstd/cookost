@@ -2741,7 +2741,6 @@ int id cookost_toolbar 0x7f0a0093
 int id coordinator 0x7f0a0094
 int id cos 0x7f0a0095
 int id counterclockwise 0x7f0a0096
-int id cuma_goceng 0x7f0a0097
 int id currentState 0x7f0a0098
 int id custom 0x7f0a0099
 int id customPanel 0x7f0a009a
@@ -2764,6 +2763,7 @@ int id design_menu_item_action_area 0x7f0a00aa
 int id design_menu_item_action_area_stub 0x7f0a00ab
 int id design_menu_item_text 0x7f0a00ac
 int id design_navigation_view 0x7f0a00ad
+int id deskripsi 0x7f0a023f
 int id dialog_button 0x7f0a00ae
 int id dimensions 0x7f0a00af
 int id direct 0x7f0a00b0
@@ -2786,7 +2786,6 @@ int id easeInOut 0x7f0a00c0
 int id easeOut 0x7f0a00c1
 int id east 0x7f0a00c2
 int id edit_query 0x7f0a00c3
-int id edt_alat 0x7f0a00c4
 int id edt_bahan 0x7f0a00c5
 int id edt_bio 0x7f0a00c6
 int id edt_email 0x7f0a00c7
@@ -2847,6 +2846,7 @@ int id ignore 0x7f0a00fd
 int id ignoreRequest 0x7f0a00fe
 int id image 0x7f0a00ff
 int id imageView 0x7f0a0100
+int id imageView2 0x7f0a0240
 int id img_email 0x7f0a0101
 int id img_item_kategori 0x7f0a0102
 int id img_item_makanan 0x7f0a0103
@@ -3252,6 +3252,7 @@ int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_deskripsi_makanan 0x7f0d001c
+int layout activity_detail_kategori 0x7f0d008d
 int layout activity_home 0x7f0d001d
 int layout activity_login 0x7f0d001e
 int layout activity_main 0x7f0d001f

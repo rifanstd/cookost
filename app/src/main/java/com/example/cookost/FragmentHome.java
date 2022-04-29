@@ -41,18 +41,19 @@ public class FragmentHome extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-//        rvQueen = getActivity().findViewById(R.id.rv_data_kategori);
         rvKategori = view.findViewById(R.id.rv_data_kategori);
         rvKategori.setHasFixedSize(true);
         profilePhoto = view.findViewById(R.id.profile_photo);
         rvAkhirBulan = view.findViewById(R.id.rv_data_akhir_bulan);
-        rvAkhirBulan.setHasFixedSize(true);
-//        listAkhirBulan.addAll(DataAkhirBulan.getListAkhirBulan());
         listAkhirBulan.addAll(DataMakanan.getListMakanan());
+
         listKategori.addAll(DataKategori.getListData());
         showRecyclerListKategori();
-        showRecyclerListAkhirBulan();
+        showRecyclerListMakanan();
+
         rvKategori.setLayoutManager(new LinearLayoutManager(view.getContext(), RecyclerView.HORIZONTAL, false));
+        rvAkhirBulan = view.findViewById(R.id.rv_data_akhir_bulan);
+        rvAkhirBulan.setHasFixedSize(true);
         rvAkhirBulan.setLayoutManager(new LinearLayoutManager(view.getContext(), RecyclerView.HORIZONTAL, false));
         profilePhoto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,11 +70,12 @@ public class FragmentHome extends Fragment {
         KategoriAdapter.setOnItemClickCallback(new DataKategoriAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(SetGetKategori data) {
+                showSelectedKategori(data);
             }
         });
     }
 
-    private void showRecyclerListAkhirBulan(){
+    private void showRecyclerListMakanan(){
         DataMakananAdapter AkhirBulanAdapter = new DataMakananAdapter(listAkhirBulan);
         rvAkhirBulan.setAdapter(AkhirBulanAdapter);
         AkhirBulanAdapter.setOnItemClickCallback(new DataMakananAdapter.OnItemClickCallback() {
@@ -82,6 +84,13 @@ public class FragmentHome extends Fragment {
                 showSelectedMakanan(data);
             }
         });
+    }
+    private void showSelectedKategori(SetGetKategori data) {
+//        Intent i = new Intent(getContext(), DetailKategori.class);
+//        i.putExtra("foto_kategori", data.getFotoKategori());
+//        i.putExtra("judul_kategori",data.getNamaKategori());
+//        i.putExtra("id",data.getNamaKategori());
+//        startActivity(i);
     }
     private void showSelectedMakanan(SetGetMakanan data) {
         Intent i = new Intent(getContext(), DeskripsiMakanan.class);
@@ -93,7 +102,6 @@ public class FragmentHome extends Fragment {
         i.putExtra("deskripsi",data.getDeskripsiMakanan());
         i.putExtra("bahan",data.getBahanMakanan());
         i.putExtra("langkah", data.getLangkahMakanan());
-
         startActivity(i);
     }
 
