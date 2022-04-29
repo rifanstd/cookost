@@ -52,14 +52,13 @@ id btn_register
 id btn_upload_resep
 id cookost
 id cookost_toolbar
-id cuma_goceng
 id daftar
 id descTitle
 id desc_foto_makanan
 id desc_judul
 id desc_tv_id_lokasi
 id desc_tv_id_pengupload
-id edt_alat
+id deskripsi
 id edt_bahan
 id edt_bio
 id edt_email
@@ -77,6 +76,7 @@ id gotoLogout
 id iconAccount
 id iconLogout
 id imageView
+id imageView2
 id img_email
 id img_item_kategori
 id img_item_makanan
@@ -126,6 +126,7 @@ id tv_sudah_punya_akun
 id tv_username
 id tv_who
 layout activity_deskripsi_makanan
+layout activity_detail_kategori
 layout activity_home
 layout activity_login
 layout activity_main

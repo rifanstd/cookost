@@ -19,4 +19,5 @@ public class SetGetKategori {
     public void setFotoKategori(int fotoKategori) {
         FotoKategori = fotoKategori;
     }
+
 }

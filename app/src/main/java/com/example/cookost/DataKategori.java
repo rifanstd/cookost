@@ -3,6 +3,11 @@ package com.example.cookost;
 import java.util.ArrayList;
 
 public class DataKategori {
+    private static int[] idKategori={
+            1,
+            2,
+            3
+    };
     private static int[] FotoKategori ={
             R.drawable.kat_makanan_hangat,
             R.drawable.kat_makanan_ringan,
@@ -24,4 +29,5 @@ public class DataKategori {
         }
         return list;
     }
+
 }

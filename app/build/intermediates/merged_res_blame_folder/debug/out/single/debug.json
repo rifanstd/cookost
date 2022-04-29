@@ -20,12 +20,12 @@
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\layout_toolbar_upload.xml.flat",
-        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\toolbar_upload.xml"
-    },
-    {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_logo_cookost.xml.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable-v24\\logo_cookost.xml"
+    },
+    {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\layout_toolbar_upload.xml.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\toolbar_upload.xml"
     },
     {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_logout_24.xml.flat",
@@ -218,6 +218,10 @@
     {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\layout_toolbar_deskripsi.xml.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\toolbar_deskripsi.xml"
+    },
+    {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_detail_kategori.xml.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\activity_detail_kategori.xml"
     },
     {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_edit_text_profile.xml.flat",

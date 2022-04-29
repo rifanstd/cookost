@@ -9,7 +9,17 @@ public class SetGetMakanan {
     private String DeskripsiMakanan;
     private String PenguploadMakanan;
     private String LokasiPenguploadMakanan;
-    private String KategoriMakanan;
+    private int IdKategoriMakanan;
+
+
+    public int getIdKategoriMakanan() {
+        return IdKategoriMakanan;
+    }
+
+    public void setIdKategoriMakanan(int idKategoriMakanan) {
+        IdKategoriMakanan = idKategoriMakanan;
+    }
+
     public String getDeskripsiMakanan() {
         return DeskripsiMakanan;
     }
@@ -29,13 +39,6 @@ public class SetGetMakanan {
 
 
 
-    public String getKategoriMakanan() {
-        return KategoriMakanan;
-    }
-
-    public void setKategoriMakanan(String kategoriMakanan) {
-        KategoriMakanan = kategoriMakanan;
-    }
 
 
 

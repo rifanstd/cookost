@@ -2742,7 +2742,6 @@ id cookost_toolbar
 id coordinator
 id cos
 id counterclockwise
-id cuma_goceng
 id currentState
 id custom
 id customPanel
@@ -2765,6 +2764,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id deskripsi
 id dialog_button
 id dimensions
 id direct
@@ -2787,7 +2787,6 @@ id easeInOut
 id easeOut
 id east
 id edit_query
-id edt_alat
 id edt_bahan
 id edt_bio
 id edt_email
@@ -2848,6 +2847,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id img_email
 id img_item_kategori
 id img_item_makanan
@@ -3253,6 +3253,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_deskripsi_makanan
+layout activity_detail_kategori
 layout activity_home
 layout activity_login
 layout activity_main

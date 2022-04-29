@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
+                android:paddingBottom="100dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -69,6 +70,7 @@
                     />
 
                 <EditText
+                    android:id="@+id/deskripsi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="100dp"
@@ -119,33 +121,7 @@
                     android:textSize="16sp"
                     android:padding="10dp"
                     />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Alat"
-                    android:fontFamily="@font/poppins_bold"
-                    android:layout_margin="10dp"
-                    android:textColor="@color/kuning"
-                    android:textSize="16sp"
-                    />
 
-                <EditText
-                    android:id="@+id/edt_alat"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:minHeight="150dp"
-                    android:inputType="textCapSentences|textMultiLine"
-                    android:singleLine="false"
-                    android:gravity="left"
-                    android:scrollHorizontally="false"
-                    android:background="@drawable/edit_text_profile"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:hint="Tuliskan alat yang digunakan pada resep anda disini. "
-                    android:fontFamily="@font/poppins_regular"
-                    android:textSize="16sp"
-                    android:padding="10dp"
-                    />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -186,8 +162,6 @@
             </LinearLayout>
 
         </ScrollView>
-
-
 
     </LinearLayout>
 

@@ -11,7 +11,7 @@
 9-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:5:5-36:19
+11-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:5:5-40:19
 12        android:allowBackup="true"
 12-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -31,86 +31,93 @@
 21-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:11:9-45
 22        <activity
 22-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:12:9-14:40
-23            android:name="com.example.cookost.DeskripsiMakanan"
-23-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:13:13-45
+23            android:name="com.example.cookost.DetailKategori"
+23-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:13:13-43
 24            android:exported="false" />
 24-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:14:13-37
 25        <activity
 25-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:15:9-17:40
-26            android:name="com.example.cookost.Profile"
-26-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:16:13-36
+26            android:name="com.example.cookost.DeskripsiMakanan"
+26-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:16:13-45
 27            android:exported="false" />
 27-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:17:13-37
 28        <activity
 28-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:18:9-20:40
-29            android:name="com.example.cookost.Home"
-29-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:19:13-33
+29            android:name="com.example.cookost.Profile"
+29-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:19:13-36
 30            android:exported="false" />
 30-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:20:13-37
 31        <activity
 31-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:21:9-23:40
-32            android:name="com.example.cookost.Register"
-32-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:22:13-37
+32            android:name="com.example.cookost.Home"
+32-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:22:13-33
 33            android:exported="false" />
 33-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:23:13-37
 34        <activity
-34-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:24:9-26:39
-35            android:name="com.example.cookost.MainActivity"
-35-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:25:13-41
-36            android:exported="true" />
-36-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:26:13-36
+34-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:24:9-26:40
+35            android:name="com.example.cookost.Register"
+35-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:25:13-37
+36            android:exported="false" />
+36-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:26:13-37
 37        <activity
-37-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:27:9-35:20
-38            android:name="com.example.cookost.Login"
-38-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:28:13-34
+37-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:27:9-34:20
+38            android:name="com.example.cookost.MainActivity"
+38-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:28:13-41
 39            android:exported="true" >
 39-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:29:13-36
 40            <intent-filter>
-40-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:30:13-34:29
+40-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:30:13-33:29
 41                <action android:name="android.intent.action.MAIN" />
 41-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:31:17-69
 41-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:31:25-66
 42
 43                <category android:name="android.intent.category.LAUNCHER" />
-43-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:33:17-77
-43-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:33:27-74
+43-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:32:17-77
+43-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:32:27-74
 44            </intent-filter>
 45        </activity>
-46
-47        <provider
-47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-48            android:name="androidx.startup.InitializationProvider"
-48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-49            android:authorities="com.example.cookost.androidx-startup"
-49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-50            android:exported="false" >
-50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-51            <meta-data
-51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-53                android:value="androidx.startup" />
-53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-54            <meta-data
-54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-55-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-56                android:value="androidx.startup" />
-56-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-57        </provider>
-58
-59        <uses-library
-59-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-60            android:name="androidx.window.extensions"
-60-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-61            android:required="false" />
-61-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-62        <uses-library
-62-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-63            android:name="androidx.window.sidecar"
-63-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-64            android:required="false" />
-64-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-65    </application>
-66
-67</manifest>
+46        <activity
+46-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:35:9-39:20
+47            android:name="com.example.cookost.Login"
+47-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:36:13-34
+48            android:exported="false" >
+48-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:37:13-37
+49        </activity>
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+53            android:authorities="com.example.cookost.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+61        </provider>
+62
+63        <uses-library
+63-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+64            android:name="androidx.window.extensions"
+64-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+66        <uses-library
+66-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+67            android:name="androidx.window.sidecar"
+67-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+68            android:required="false" />
+68-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\53e21ad2960a4084891685d4212cd06a\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+69    </application>
+70
+71</manifest>

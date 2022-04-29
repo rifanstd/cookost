@@ -13,9 +13,15 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class DataMakananAdapter extends RecyclerView.Adapter<DataMakananAdapter.ListViewHolder>{
     private ArrayList<SetGetMakanan> listMakanan;
+
+    public DataMakananAdapter() {
+
+    }
+
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -38,7 +44,6 @@ public class DataMakananAdapter extends RecyclerView.Adapter<DataMakananAdapter.
             }
         });
     }
-
     @Override
     public int getItemCount() {
         return listMakanan.size();
@@ -64,6 +69,7 @@ public class DataMakananAdapter extends RecyclerView.Adapter<DataMakananAdapter.
     public DataMakananAdapter(ArrayList<SetGetMakanan> list) {
         this.listMakanan = list;
     }
+
     public interface OnItemClickCallback {
         void onItemClicked(SetGetMakanan data);
     }

@@ -25,7 +25,7 @@
             app:layout_constraintHorizontal_bias="0.266"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.329"
+            app:layout_constraintVertical_bias="0.354"
             tools:listitem="@layout/list_kategori">
 
         </androidx.recyclerview.widget.RecyclerView>
@@ -58,14 +58,14 @@
             app:layout_constraintHorizontal_bias="0.094"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.197" />
+            app:layout_constraintVertical_bias="0.215" />
 
         <TextView
             android:id="@+id/khusus_akhir_bulan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
-            android:text="Khusus Akhir Bulan"
+            android:text="List Makanan"
             android:textColor="@color/kuning"
             android:textSize="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -74,21 +74,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.499" />
-
-        <TextView
-            android:id="@+id/cuma_goceng"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_bold"
-            android:text="#CumaGoceng"
-            android:textColor="@color/kuning"
-            android:textSize="24dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.16"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.744" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_data_akhir_bulan"

@@ -20,6 +20,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Cookost" >
         <activity
+            android:name="com.example.cookost.DetailKategori"
+            android:exported="false" />
+        <activity
             android:name="com.example.cookost.DeskripsiMakanan"
             android:exported="false" />
         <activity
@@ -33,15 +36,16 @@
             android:exported="false" />
         <activity
             android:name="com.example.cookost.MainActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.example.cookost.Login"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cookost.Login"
+            android:exported="false" >
         </activity>
 
         <provider

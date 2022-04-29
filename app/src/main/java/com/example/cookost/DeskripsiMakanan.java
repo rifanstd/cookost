@@ -8,11 +8,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class DeskripsiMakanan extends AppCompatActivity {
     private ImageView fotoMakanan;
     private ImageView fotoPengupload;
     private TextView judul, deskripsi,bahan, langkah, namaPengupload, lokasiPengupload;
     ImageView arrowback;
+    private ArrayList<SetGetMakanan> listAkhirBulan = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class DeskripsiMakanan extends AppCompatActivity {
         langkah = findViewById(R.id.tv_langkah);
         namaPengupload = findViewById(R.id.desc_tv_id_pengupload);
         lokasiPengupload = findViewById(R.id.desc_tv_id_lokasi);
+
         Bundle covers = getIntent().getExtras();
         Bundle cover = getIntent().getExtras();
         int foto_makanan = covers.getInt("foto_makanan");
@@ -36,6 +40,7 @@ public class DeskripsiMakanan extends AppCompatActivity {
         String LOKASI_PENGUPLOAD = getIntent().getStringExtra("lokasi_pengupload");
         String BAHAN = getIntent().getStringExtra("bahan");
         String LANGKAH = getIntent().getStringExtra("langkah");
+
         fotoMakanan.setImageResource(foto_makanan);
         fotoPengupload.setImageResource(foto_profil);
         namaPengupload.setText(NAMA_PENGUPLOAD);
