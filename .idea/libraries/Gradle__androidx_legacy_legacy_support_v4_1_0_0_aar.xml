@@ -2,9 +2,10 @@
   <library name="Gradle: androidx.legacy:legacy-support-v4:1.0.0@aar">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c4c44633242d28092407c962a2312420/transformed/legacy-support-v4-1.0.0/res" />
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/MyApplication2/caches/transforms-3/c4c44633242d28092407c962a2312420/transformed/legacy-support-v4-1.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/MyApplication2/caches/transforms-3/c4c44633242d28092407c962a2312420/transformed/legacy-support-v4-1.0.0/res" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/MyApplication2/caches/transforms-3/c4c44633242d28092407c962a2312420/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/MyApplication2/caches/transforms-3/d6e686d3b6f669ea79967c8369f81b88/transformed/legacy-support-v4-1.0.0/res" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/MyApplication2/caches/transforms-3/d6e686d3b6f669ea79967c8369f81b88/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/MyApplication2/caches/transforms-3/d6e686d3b6f669ea79967c8369f81b88/transformed/legacy-support-v4-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

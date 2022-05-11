@@ -20,6 +20,10 @@
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\xml_network_security_config.xml.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\xml\\network_security_config.xml"
+    },
+    {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_logo_cookost.xml.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable-v24\\logo_cookost.xml"
     },
@@ -56,24 +60,24 @@
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable-v24\\ic_lock.xml"
     },
     {
-        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_indomie_telur_kornet.png.flat",
-        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable\\indomie_telur_kornet.png"
-    },
-    {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\layout_list_kategori.xml.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\list_kategori.xml"
+    },
+    {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_indomie_telur_kornet.png.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable\\indomie_telur_kornet.png"
     },
     {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_upload.xml.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable\\ic_upload.xml"
     },
     {
-        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_nasi_goreng_telur.png.flat",
-        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable\\nasi_goreng_telur.png"
-    },
-    {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\layout_list_makanan.xml.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\list_makanan.xml"
+    },
+    {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_nasi_goreng_telur.png.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable\\nasi_goreng_telur.png"
     },
     {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_back.xml.flat",
@@ -164,6 +168,10 @@
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logo.xml.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable\\ic_logo.xml"
+    },
+    {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\font_poppins_thin.ttf.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\font\\poppins_thin.ttf"
     },
@@ -242,6 +250,10 @@
     {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_reset_password.xml.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\activity_reset_password.xml"
     },
     {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",

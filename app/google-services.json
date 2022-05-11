@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "738592751600",
+    "firebase_url": "https://cookost-5cd89-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "cookost-5cd89",
+    "storage_bucket": "cookost-5cd89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738592751600:android:58a11e68c10cf87e6de735",
+        "android_client_info": {
+          "package_name": "com.example.cookost"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738592751600-ohes82rscfnum3fmrj0s0johf3q5dauf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtYuVp0RDy4EQmI90g0ncoN-fabZbdiAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738592751600-ohes82rscfnum3fmrj0s0johf3q5dauf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
