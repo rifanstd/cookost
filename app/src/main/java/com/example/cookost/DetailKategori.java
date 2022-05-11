@@ -24,6 +24,18 @@ public class DetailKategori extends AppCompatActivity {
         rvAkhirBulan = findViewById(R.id.rv_data_akhir_bulan);
         rvAkhirBulan.setHasFixedSize(true);
         rvAkhirBulan.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
-
+        showRecyclerListMakanan();
     }
+
+    private void showRecyclerListMakanan() {
+        DataMakananAdapter AkhirBulanAdapter = new DataMakananAdapter(listAkhirBulan);
+        rvAkhirBulan.setAdapter(AkhirBulanAdapter);
+        AkhirBulanAdapter.setOnItemClickCallback(new DataMakananAdapter.OnItemClickCallback() {
+            @Override
+            public void onItemClicked(SetGetMakanan data) {
+
+            }
+        });
+    }
+
 }

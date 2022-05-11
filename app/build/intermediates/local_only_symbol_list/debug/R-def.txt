@@ -21,6 +21,7 @@ drawable ic_home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_lock
+drawable ic_logo
 drawable ic_profile
 drawable ic_setting
 drawable ic_sidebar
@@ -50,6 +51,7 @@ id bottomNavigationView2
 id btn_login
 id btn_register
 id btn_upload_resep
+id button
 id cookost
 id cookost_toolbar
 id daftar
@@ -67,6 +69,7 @@ id edt_instagram
 id edt_langkah
 id edt_name
 id edt_new_email
+id edt_new_pass
 id edt_new_password
 id edt_password
 id edt_username
@@ -95,6 +98,7 @@ id nav_home
 id nav_setting
 id nav_upload
 id profile_photo
+id progressBar
 id rv_data_akhir_bulan
 id rv_data_kategori
 id spinner_who
@@ -132,6 +136,7 @@ layout activity_login
 layout activity_main
 layout activity_profile
 layout activity_register
+layout activity_reset_password
 layout fragment_home
 layout fragment_profile
 layout fragment_setting
@@ -148,5 +153,13 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph_home_setting
 string app_name
+string default_web_client_id
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
+string project_id
 style Theme.Cookost
+xml network_security_config

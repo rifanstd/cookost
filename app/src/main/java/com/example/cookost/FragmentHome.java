@@ -86,11 +86,7 @@ public class FragmentHome extends Fragment {
         });
     }
     private void showSelectedKategori(SetGetKategori data) {
-//        Intent i = new Intent(getContext(), DetailKategori.class);
-//        i.putExtra("foto_kategori", data.getFotoKategori());
-//        i.putExtra("judul_kategori",data.getNamaKategori());
-//        i.putExtra("id",data.getNamaKategori());
-//        startActivity(i);
+
     }
     private void showSelectedMakanan(SetGetMakanan data) {
         Intent i = new Intent(getContext(), DeskripsiMakanan.class);

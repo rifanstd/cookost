@@ -6,6 +6,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,8 +23,6 @@ public class UploadFragment extends Fragment {
     Button Upload;
     EditText NamaResep, Deskripsi, Bahan,Langkah;
     ImageView arrowback;
-    SetGetMakanan b;
-
     private SetGetMakanan Makanan = new SetGetMakanan();
     private ArrayList<SetGetMakanan> listAkhirBulan = new ArrayList<>();
     @Override
@@ -42,7 +42,7 @@ public class UploadFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        listAkhirBulan.addAll(DataMakanan.getListMakanan());
         arrowback = view.findViewById(R.id.backFromUpload);
         Upload = view.findViewById(R.id.btn_upload_resep);
         NamaResep = view.findViewById(R.id.input_nama_resep);
@@ -53,6 +53,7 @@ public class UploadFragment extends Fragment {
         String B = Deskripsi.getContext().toString();
         String C = Bahan.getContext().toString();
         String D = Langkah.getContext().toString();
+
         arrowback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,7 +64,17 @@ public class UploadFragment extends Fragment {
         Upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DataMakananAdapter b = new DataMakananAdapter(listAkhirBulan);
+                DataMakanan a = new DataMakanan();
+                a.AddMakanan(A , B, C, D);
+                b.updateReceiptsList(listAkhirBulan);
+                Upload.setText("");
+                Deskripsi.setText("");
+                Bahan.setText("");
+                Langkah.setText("");
+
             }
         });
     }
+
 }

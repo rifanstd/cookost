@@ -3,6 +3,7 @@ package com.example.cookost;
 import java.util.ArrayList;
 
 public class DataMakanan {
+    ArrayList<Integer> asw = new ArrayList<Integer>();
 
     private static int[] IdKategoriMakanan={
             1,
@@ -115,7 +116,6 @@ public class DataMakanan {
     }
     public void AddMakanan(String NamaMakanan, String Deskripsi, String Bahan, String Langkah) {
         SetGetMakanan Makanan = new SetGetMakanan();
-        DataMakananAdapter adapter = new DataMakananAdapter();
         Makanan.setIdKategoriMakanan(1);
         Makanan.setFotoMakanan(R.drawable.rifan);
         Makanan.setFotoProfil(R.drawable.rifan);
@@ -125,6 +125,10 @@ public class DataMakanan {
         Makanan.setLangkahMakanan(Langkah);
         Makanan.setPenguploadMakanan("RIFAN");
         Makanan.setLokasiPenguploadMakanan("Bandar Lampung");
+    }
+    static ArrayList<SetGetMakanan> setListMakanan(){
+        ArrayList<SetGetMakanan> list = new ArrayList<>();
+     return list;
     }
 
 }

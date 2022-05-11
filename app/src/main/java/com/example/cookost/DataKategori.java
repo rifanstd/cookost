@@ -29,5 +29,5 @@ public class DataKategori {
         }
         return list;
     }
-
+    
 }

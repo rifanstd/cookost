@@ -18,10 +18,6 @@ import java.util.List;
 public class DataMakananAdapter extends RecyclerView.Adapter<DataMakananAdapter.ListViewHolder>{
     private ArrayList<SetGetMakanan> listMakanan;
 
-    public DataMakananAdapter() {
-
-    }
-
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -65,7 +61,16 @@ public class DataMakananAdapter extends RecyclerView.Adapter<DataMakananAdapter.
             tvNamaMakanan = itemView.findViewById(R.id.tv_item_makanan);
         }
     }
-
+    public void updateReceiptsList(ArrayList<SetGetMakanan> newlist) {
+        listMakanan.clear();
+        listMakanan.addAll(newlist);
+        this.notifyDataSetChanged();
+    }
+//    public void updateData(ArrayList<ViewModel> viewModels) {
+//        items.clear();
+//        items.addAll(viewModels);
+//        notifyDataSetChanged();
+//    }
     public DataMakananAdapter(ArrayList<SetGetMakanan> list) {
         this.listMakanan = list;
     }
