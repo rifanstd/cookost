@@ -25,6 +25,9 @@
         android:theme="@style/Theme.Cookost"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.cookost.ProfileEdit"
+            android:exported="false" />
+        <activity
             android:name="com.example.cookost.ResetPassword"
             android:exported="false" />
         <activity

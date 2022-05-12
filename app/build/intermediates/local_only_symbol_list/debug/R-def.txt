@@ -135,10 +135,10 @@ layout activity_home
 layout activity_login
 layout activity_main
 layout activity_profile
+layout activity_profile_edit
 layout activity_register
 layout activity_reset_password
 layout fragment_home
-layout fragment_profile
 layout fragment_setting
 layout fragment_upload
 layout list_kategori

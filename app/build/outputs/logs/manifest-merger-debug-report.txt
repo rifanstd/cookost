@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-49:12
+ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-52:12
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\2e1d4535823235787ec5c3d7d4890695\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.navigation:navigation-ui:2.4.2] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\f7ed14b229300ad11002e035243f5643\transformed\navigation-ui-2.4.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\8e614f96138e66719c6e365d9402762c\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
@@ -79,20 +79,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\USER\AndroidStud
 MERGED from [androidx.print:print:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\96c6b5c1d33ae62b280a57bf07ec3c43\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\ad245bf742578881c9ecea060aeeb720\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\79f5a3fa03a16d194c897ec71b55329b\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-49:12
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-49:12
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:2:11-69
@@ -113,7 +113,7 @@ MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStud
 	android:name
 		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:8:5-47:19
+ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:8:5-50:19
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\2e1d4535823235787ec5c3d7d4890695\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\2e1d4535823235787ec5c3d7d4890695\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\8e614f96138e66719c6e365d9402762c\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
@@ -172,64 +172,70 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\USER\AndroidStudio
 		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:12:9-69
 	android:usesCleartextTraffic
 		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:16:9-44
-activity#com.example.cookost.ResetPassword
+activity#com.example.cookost.ProfileEdit
 ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
 		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:18:13-42
-activity#com.example.cookost.DetailKategori
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:18:13-40
+activity#com.example.cookost.ResetPassword
 ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:21:13-43
-activity#com.example.cookost.DeskripsiMakanan
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:21:13-42
+activity#com.example.cookost.DetailKategori
 ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
 		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:24:13-45
-activity#com.example.cookost.Profile
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:24:13-43
+activity#com.example.cookost.DeskripsiMakanan
 ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
 		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:27:13-36
-activity#com.example.cookost.Home
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:27:13-45
+activity#com.example.cookost.Profile
 ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
 		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:30:13-33
-activity#com.example.cookost.Register
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:30:13-36
+activity#com.example.cookost.Home
 ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:32:9-34:40
 	android:exported
 		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:33:13-37
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:33:13-33
+activity#com.example.cookost.Register
+ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:35:9-37:40
+	android:exported
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:36:13-37
 activity#com.example.cookost.MainActivity
-ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:35:9-43:20
+ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:38:9-46:20
 	android:exported
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:37:13-36
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:40:13-36
 	android:name
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:36:13-41
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:39:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:38:13-42:29
+ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:41:13-45:29
 action#android.intent.action.MAIN
-ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:39:17-69
+ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:42:17-69
 	android:name
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:39:25-66
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:42:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:41:17-77
+ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:44:17-77
 	android:name
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:41:27-74
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:44:27-74
 activity#com.example.cookost.Login
-ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:44:9-46:49
+ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:46:13-37
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:45:13-34
+		ADDED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:48:13-34
 uses-sdk
 INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml
