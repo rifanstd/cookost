@@ -40,6 +40,10 @@
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable-v24\\kat_kere_hore.xml"
     },
     {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_profile_edit.xml.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\activity_profile_edit.xml"
+    },
+    {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_home.xml.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable\\ic_home.xml"
     },
@@ -192,10 +196,6 @@
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\font\\poppins_regular.ttf"
     },
     {
-        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_profile.xml.flat",
-        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\fragment_profile.xml"
-    },
-    {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\layout_toolbar.xml.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\toolbar.xml"
     },
@@ -248,12 +248,12 @@
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\activity_deskripsi_makanan.xml"
     },
     {
-        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_reset_password.xml.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\activity_reset_password.xml"
+    },
+    {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",

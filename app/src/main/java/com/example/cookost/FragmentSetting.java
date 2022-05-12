@@ -15,9 +15,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TableLayout;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class FragmentSetting extends Fragment {
     TableLayout tableLayout1, tableLayout2;
     ImageView arrowback;
+    FirebaseAuth mAuth;
   
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,7 +34,8 @@ public class FragmentSetting extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
         tableLayout1 = view.findViewById(R.id.Account);
         tableLayout2 = view.findViewById(R.id.Logout);
 
@@ -45,7 +50,7 @@ public class FragmentSetting extends Fragment {
         tableLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Profile.class);
+                Intent intent = new Intent(getActivity(), ProfileEdit.class);
                 getActivity().startActivity(intent);
             }
         });
@@ -53,6 +58,7 @@ public class FragmentSetting extends Fragment {
         tableLayout2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mAuth.signOut();
                 Intent intent = new Intent(getActivity(), Login.class);
                 getActivity().startActivity(intent);
             }
