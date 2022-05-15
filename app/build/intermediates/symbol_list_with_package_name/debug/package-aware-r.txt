@@ -2753,6 +2753,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_login
 id btn_register
+id btn_save
 id btn_upload_resep
 id button
 id buttonPanel
