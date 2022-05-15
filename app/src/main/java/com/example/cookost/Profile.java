@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.FaceDetector;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -21,21 +22,24 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import org.w3c.dom.Text;
+
 public class Profile extends AppCompatActivity {
     ImageView arrowBack;
     private FirebaseUser user;
     private DatabaseReference reference;
     private String userID;
-    private TextView TVusername;
+    private TextView TVusername, TVNama,TVWho,TVBio,TVInstagram, TVFacebook;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        Spinner spinner = (Spinner) findViewById(R.id.spinner_who);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.list_who, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
         TVusername = (TextView) findViewById(R.id.edt_username);
+        TVNama = (TextView) findViewById(R.id.edt_name);
+        TVWho = (TextView) findViewById(R.id.spinner_who);
+        TVBio = (TextView) findViewById(R.id.edt_bio);
+        TVInstagram = (TextView) findViewById(R.id.edt_instagram);
+        TVFacebook = (TextView) findViewById(R.id.edt_facebook)  ;
         arrowBack = findViewById(R.id.backFromProfile);
         arrowBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +57,17 @@ public class Profile extends AppCompatActivity {
                 User userProfile = snapshot.getValue(User.class);
                 if(userProfile != null){
                     String Username = userProfile.username;
+                    String Nama = userProfile.nama;
+                    String Bio = userProfile.bio;
+                    String Facebook = userProfile.facebook;
+                    String Instagram = userProfile.instagram;
+                    String Who = userProfile.who;
                     TVusername.setText(Username);
+                    TVNama.setText(Nama);
+                    TVBio.setText(Bio);
+                    TVWho.setText(Who);
+                    TVFacebook.setText(Facebook);
+                    TVInstagram.setText(Instagram);
                 }
             }
 

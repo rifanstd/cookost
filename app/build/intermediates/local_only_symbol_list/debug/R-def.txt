@@ -50,6 +50,7 @@ id backFromUpload
 id bottomNavigationView2
 id btn_login
 id btn_register
+id btn_save
 id btn_upload_resep
 id button
 id cookost
