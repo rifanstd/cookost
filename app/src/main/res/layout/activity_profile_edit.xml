@@ -50,7 +50,19 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/rifan"
+                    android:id="@+id/image"
                     />
+
+                <Button
+                    android:id="@+id/btn_pick_foto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_button"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Pilih Foto"
+                    android:textColor="@color/white" />
 
                 <TextView
                     android:id="@+id/tv_username"

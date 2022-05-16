@@ -26,7 +26,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.354"
-            tools:listitem="@layout/list_kategori">
+            tools:listitem="@layout/category_item">
 
         </androidx.recyclerview.widget.RecyclerView>
 
