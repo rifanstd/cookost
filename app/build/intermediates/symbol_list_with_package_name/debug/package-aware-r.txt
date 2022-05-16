@@ -2552,6 +2552,8 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable edit_text_profile
 drawable facebook
+drawable foto_profile_background
+drawable foto_profile_foreground
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_back
@@ -2752,6 +2754,8 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_login
+id btn_pick_foto
+id btn_pilih
 id btn_register
 id btn_save
 id btn_upload_resep
@@ -2912,6 +2916,7 @@ id img_new_email
 id img_new_password
 id img_password
 id img_profil
+id img_up
 id img_username
 id immediateStop
 id include
@@ -3324,6 +3329,7 @@ layout activity_register
 layout activity_reset_password
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout category_item
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3433,6 +3439,8 @@ layout toolbar_upload
 menu cookost_bottom_menu
 menu example_menu
 menu example_menu2
+mipmap foto_profile
+mipmap foto_profile_round
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph_home_setting

@@ -16,251 +16,275 @@
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:6:5-79
 12-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:6:22-76
-13
-14    <application
-14-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:8:5-50:19
-15        android:allowBackup="true"
-15-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:9:9-35
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.7.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\4a73645463199b9fea916370cbff35e3\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-17        android:debuggable="true"
-18        android:extractNativeLibs="false"
-19        android:icon="@drawable/ic_logo"
-19-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:10:9-41
-20        android:label="@string/app_name"
-20-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:11:9-41
-21        android:networkSecurityConfig="@xml/network_security_config"
-21-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:12:9-69
-22        android:roundIcon="@drawable/ic_logo"
-22-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:13:9-46
-23        android:supportsRtl="true"
-23-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:14:9-35
-24        android:testOnly="true"
-25        android:theme="@style/Theme.Cookost"
-25-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:15:9-45
-26        android:usesCleartextTraffic="true" >
-26-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:16:9-44
-27        <activity
-27-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:17:9-19:40
-28            android:name="com.example.cookost.ProfileEdit"
-28-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:18:13-40
-29            android:exported="false" />
-29-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:19:13-37
-30        <activity
-30-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:20:9-22:40
-31            android:name="com.example.cookost.ResetPassword"
-31-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:21:13-42
-32            android:exported="false" />
-32-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:22:13-37
-33        <activity
-33-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:23:9-25:40
-34            android:name="com.example.cookost.DetailKategori"
-34-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:24:13-43
-35            android:exported="false" />
-35-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:25:13-37
-36        <activity
-36-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:26:9-28:40
-37            android:name="com.example.cookost.DeskripsiMakanan"
-37-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:27:13-45
-38            android:exported="false" />
-38-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:28:13-37
-39        <activity
-39-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:29:9-31:40
-40            android:name="com.example.cookost.Profile"
-40-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:30:13-36
-41            android:exported="false" />
-41-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:31:13-37
-42        <activity
-42-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:32:9-34:40
-43            android:name="com.example.cookost.Home"
-43-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:33:13-33
-44            android:exported="false" />
-44-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:34:13-37
-45        <activity
-45-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:35:9-37:40
-46            android:name="com.example.cookost.Register"
-46-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:36:13-37
-47            android:exported="false" />
-47-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:37:13-37
-48        <activity
-48-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:38:9-46:20
-49            android:name="com.example.cookost.MainActivity"
-49-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:39:13-41
-50            android:exported="true" >
-50-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:40:13-36
-51            <intent-filter>
-51-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:41:13-45:29
-52                <action android:name="android.intent.action.MAIN" />
-52-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:42:17-69
-52-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:42:25-66
-53
-54                <category android:name="android.intent.category.LAUNCHER" />
-54-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:44:17-77
-54-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:44:27-74
-55            </intent-filter>
-56        </activity>
-57        <activity
-57-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:47:9-49:40
-58            android:name="com.example.cookost.Login"
-58-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:48:13-34
-59            android:exported="false" />
-59-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:49:13-37
-60
-61        <service
-61-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:29:9-35:19
-62            android:name="com.google.firebase.components.ComponentDiscoveryService"
-62-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:30:13-84
-63            android:directBootAware="true"
-63-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:35:13-43
-64            android:exported="false" >
-64-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:31:13-37
-65            <meta-data
-65-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:32:13-34:85
-66                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-66-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:33:17-109
-67                android:value="com.google.firebase.components.ComponentRegistrar" />
-67-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:34:17-82
-68            <meta-data
-68-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:67:13-69:85
-69                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-69-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:68:17-109
-70                android:value="com.google.firebase.components.ComponentRegistrar" />
-70-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:69:17-82
-71        </service>
-72
-73        <activity
-73-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:27:9-44:20
-74            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-74-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:28:13-80
-75            android:excludeFromRecents="true"
-75-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:29:13-46
-76            android:exported="true"
-76-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:30:13-36
-77            android:launchMode="singleTask"
-77-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:31:13-44
-78            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-78-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:32:13-72
-79            <intent-filter>
-79-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:33:13-43:29
-80                <action android:name="android.intent.action.VIEW" />
-80-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:34:17-69
-80-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:34:25-66
-81
-82                <category android:name="android.intent.category.DEFAULT" />
-82-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
-82-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
-83                <category android:name="android.intent.category.BROWSABLE" />
-83-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
-83-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:7:5-79
+13-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:7:22-77
+14
+15    <application
+15-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:8:5-50:19
+16        android:allowBackup="true"
+16-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:9:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.7.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\4a73645463199b9fea916370cbff35e3\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:extractNativeLibs="false"
+20        android:icon="@drawable/ic_logo"
+20-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:10:9-41
+21        android:label="@string/app_name"
+21-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:11:9-41
+22        android:networkSecurityConfig="@xml/network_security_config"
+22-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:12:9-69
+23        android:roundIcon="@drawable/ic_logo"
+23-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:13:9-46
+24        android:supportsRtl="true"
+24-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:14:9-35
+25        android:testOnly="true"
+26        android:theme="@style/Theme.Cookost"
+26-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:15:9-45
+27        android:usesCleartextTraffic="true" >
+27-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:16:9-44
+28        <activity
+28-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:17:9-19:40
+29            android:name="com.example.cookost.ProfileEdit"
+29-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:18:13-40
+30            android:exported="false" />
+30-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:19:13-37
+31        <activity
+31-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:20:9-22:40
+32            android:name="com.example.cookost.ResetPassword"
+32-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:21:13-42
+33            android:exported="false" />
+33-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:22:13-37
+34        <activity
+34-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:23:9-25:40
+35            android:name="com.example.cookost.DetailKategori"
+35-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:24:13-43
+36            android:exported="false" />
+36-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:25:13-37
+37        <activity
+37-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:26:9-28:40
+38            android:name="com.example.cookost.DeskripsiMakanan"
+38-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:27:13-45
+39            android:exported="false" />
+39-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:28:13-37
+40        <activity
+40-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:29:9-31:40
+41            android:name="com.example.cookost.Profile"
+41-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:30:13-36
+42            android:exported="false" />
+42-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:31:13-37
+43        <activity
+43-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:32:9-34:40
+44            android:name="com.example.cookost.Home"
+44-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:33:13-33
+45            android:exported="false" />
+45-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:34:13-37
+46        <activity
+46-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:35:9-37:40
+47            android:name="com.example.cookost.Register"
+47-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:36:13-37
+48            android:exported="false" />
+48-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:37:13-37
+49        <activity
+49-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:38:9-46:20
+50            android:name="com.example.cookost.MainActivity"
+50-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:39:13-41
+51            android:exported="true" >
+51-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:40:13-36
+52            <intent-filter>
+52-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:41:13-45:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:42:17-69
+53-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:42:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:44:17-77
+55-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:44:27-74
+56            </intent-filter>
+57        </activity>
+58        <activity
+58-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:47:9-49:40
+59            android:name="com.example.cookost.Login"
+59-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:48:13-34
+60            android:exported="false" />
+60-->D:\Project android\uts\cookost\app\src\main\AndroidManifest.xml:49:13-37
+61
+62        <provider
+62-->[com.squareup.picasso:picasso:2.8] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\0d6613682fe9437dd802e58f800f8096\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
+63            android:name="com.squareup.picasso.PicassoProvider"
+63-->[com.squareup.picasso:picasso:2.8] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\0d6613682fe9437dd802e58f800f8096\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
+64            android:authorities="com.example.cookost.com.squareup.picasso"
+64-->[com.squareup.picasso:picasso:2.8] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\0d6613682fe9437dd802e58f800f8096\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
+65            android:exported="false" />
+65-->[com.squareup.picasso:picasso:2.8] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\0d6613682fe9437dd802e58f800f8096\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
+66
+67        <service
+67-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:29:9-35:19
+68            android:name="com.google.firebase.components.ComponentDiscoveryService"
+68-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:30:13-84
+69            android:directBootAware="true"
+69-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+70            android:exported="false" >
+70-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:31:13-37
+71            <meta-data
+71-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:32:13-34:85
+72                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+72-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:33:17-109
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.firebase:firebase-database:20.0.5] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\6b3d5f126b8ce5177c21b3ad33248024\transformed\firebase-database-20.0.5\AndroidManifest.xml:34:17-82
+74            <meta-data
+74-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:67:13-69:85
+75                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+75-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:68:17-109
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:69:17-82
+77            <meta-data
+77-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\e01ed3eb548c7eab856dafe559c9cbd7\transformed\firebase-firestore-24.1.2\AndroidManifest.xml:20:13-22:85
+78                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+78-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\e01ed3eb548c7eab856dafe559c9cbd7\transformed\firebase-firestore-24.1.2\AndroidManifest.xml:21:17-111
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\e01ed3eb548c7eab856dafe559c9cbd7\transformed\firebase-firestore-24.1.2\AndroidManifest.xml:22:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\63e6681c0009f83fb78320eb33169d99\transformed\firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
+81                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+81-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\63e6681c0009f83fb78320eb33169d99\transformed\firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\63e6681c0009f83fb78320eb33169d99\transformed\firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
+83        </service>
 84
-85                <data
-85-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:39:17-42:51
-86                    android:host="firebase.auth"
-86-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:40:21-49
-87                    android:path="/"
-87-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:41:21-37
-88                    android:scheme="genericidp" />
-88-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:42:21-48
-89            </intent-filter>
-90        </activity>
-91        <activity
-91-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:45:9-62:20
-92            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-92-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:46:13-79
-93            android:excludeFromRecents="true"
-93-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:47:13-46
-94            android:exported="true"
-94-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:48:13-36
-95            android:launchMode="singleTask"
-95-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:49:13-44
-96            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-96-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:50:13-72
-97            <intent-filter>
-97-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:51:13-61:29
-98                <action android:name="android.intent.action.VIEW" />
-98-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:34:17-69
-98-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:34:25-66
-99
-100                <category android:name="android.intent.category.DEFAULT" />
-100-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
-100-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
-101                <category android:name="android.intent.category.BROWSABLE" />
-101-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
-101-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
-102
-103                <data
-103-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:39:17-42:51
-104                    android:host="firebase.auth"
-104-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:40:21-49
-105                    android:path="/"
-105-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:41:21-37
-106                    android:scheme="recaptcha" />
-106-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:42:21-48
-107            </intent-filter>
-108        </activity>
-109        <activity
-109-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\480ced47afd118d4f32a0bbd509ea0d1\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-110            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-110-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\480ced47afd118d4f32a0bbd509ea0d1\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-111            android:exported="false"
-111-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\480ced47afd118d4f32a0bbd509ea0d1\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-112            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-112-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\480ced47afd118d4f32a0bbd509ea0d1\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-113
-114        <provider
-114-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
-115            android:name="com.google.firebase.provider.FirebaseInitProvider"
-115-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:27:13-77
-116            android:authorities="com.example.cookost.firebaseinitprovider"
-116-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:28:13-72
-117            android:directBootAware="true"
-117-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:29:13-43
-118            android:exported="false"
-118-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:30:13-37
-119            android:initOrder="100" />
-119-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:31:13-36
-120
-121        <meta-data
-121-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\f8f5c76e46a42f0734a947b09b961cf5\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-122            android:name="com.google.android.gms.version"
-122-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\f8f5c76e46a42f0734a947b09b961cf5\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-123            android:value="@integer/google_play_services_version" />
-123-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\f8f5c76e46a42f0734a947b09b961cf5\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-124
-125        <provider
-125-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-126            android:name="androidx.startup.InitializationProvider"
-126-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-127            android:authorities="com.example.cookost.androidx-startup"
-127-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-128            android:exported="false" >
-128-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-129            <meta-data
-129-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-130                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-130-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-131                android:value="androidx.startup" />
-131-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-132            <meta-data
-132-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7daa621a439079be7472f59471227879\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-133                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-133-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7daa621a439079be7472f59471227879\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-134                android:value="androidx.startup" />
-134-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7daa621a439079be7472f59471227879\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-135        </provider>
+85        <activity
+85-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:27:9-44:20
+86            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+86-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:28:13-80
+87            android:excludeFromRecents="true"
+87-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:29:13-46
+88            android:exported="true"
+88-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:30:13-36
+89            android:launchMode="singleTask"
+89-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:31:13-44
+90            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+90-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:32:13-72
+91            <intent-filter>
+91-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:33:13-43:29
+92                <action android:name="android.intent.action.VIEW" />
+92-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:34:17-69
+92-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:34:25-66
+93
+94                <category android:name="android.intent.category.DEFAULT" />
+94-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
+94-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
+95                <category android:name="android.intent.category.BROWSABLE" />
+95-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
+95-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
+96
+97                <data
+97-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:39:17-42:51
+98                    android:host="firebase.auth"
+98-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:40:21-49
+99                    android:path="/"
+99-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:41:21-37
+100                    android:scheme="genericidp" />
+100-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:42:21-48
+101            </intent-filter>
+102        </activity>
+103        <activity
+103-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:45:9-62:20
+104            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+104-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:46:13-79
+105            android:excludeFromRecents="true"
+105-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:47:13-46
+106            android:exported="true"
+106-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:48:13-36
+107            android:launchMode="singleTask"
+107-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:49:13-44
+108            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+108-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:50:13-72
+109            <intent-filter>
+109-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:51:13-61:29
+110                <action android:name="android.intent.action.VIEW" />
+110-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:34:17-69
+110-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:34:25-66
+111
+112                <category android:name="android.intent.category.DEFAULT" />
+112-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
+112-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
+113                <category android:name="android.intent.category.BROWSABLE" />
+113-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
+113-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
+114
+115                <data
+115-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:39:17-42:51
+116                    android:host="firebase.auth"
+116-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:40:21-49
+117                    android:path="/"
+117-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:41:21-37
+118                    android:scheme="recaptcha" />
+118-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\b02196e6a8969de7272dee25419b3301\transformed\firebase-auth-21.0.3\AndroidManifest.xml:42:21-48
+119            </intent-filter>
+120        </activity>
+121        <activity
+121-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\480ced47afd118d4f32a0bbd509ea0d1\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+122            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+122-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\480ced47afd118d4f32a0bbd509ea0d1\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+123            android:exported="false"
+123-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\480ced47afd118d4f32a0bbd509ea0d1\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+124            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+124-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\480ced47afd118d4f32a0bbd509ea0d1\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+125
+126        <provider
+126-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+127            android:name="com.google.firebase.provider.FirebaseInitProvider"
+127-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+128            android:authorities="com.example.cookost.firebaseinitprovider"
+128-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+129            android:directBootAware="true"
+129-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+130            android:exported="false"
+130-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+131            android:initOrder="100" />
+131-->[com.google.firebase:firebase-common:20.1.1] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\713da2c9c42e7245f9562b0e54fe1250\transformed\firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+132
+133        <meta-data
+133-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\f8f5c76e46a42f0734a947b09b961cf5\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+134            android:name="com.google.android.gms.version"
+134-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\f8f5c76e46a42f0734a947b09b961cf5\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+135            android:value="@integer/google_play_services_version" />
+135-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\f8f5c76e46a42f0734a947b09b961cf5\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
 136
-137        <uses-library
-137-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-138            android:name="androidx.window.extensions"
-138-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-139            android:required="false" />
-139-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-140        <uses-library
-140-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-141            android:name="androidx.window.sidecar"
-141-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-142            android:required="false" />
-142-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-143    </application>
-144
-145</manifest>
+137        <provider
+137-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+138            android:name="androidx.startup.InitializationProvider"
+138-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+139            android:authorities="com.example.cookost.androidx-startup"
+139-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+140            android:exported="false" >
+140-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+141            <meta-data
+141-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+142                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+142-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+143                android:value="androidx.startup" />
+143-->[androidx.emoji2:emoji2:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\d7d27c68601a04d3e1bdd881f9c325b2\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+144            <meta-data
+144-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7daa621a439079be7472f59471227879\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+145                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+145-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7daa621a439079be7472f59471227879\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+146                android:value="androidx.startup" />
+146-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\7daa621a439079be7472f59471227879\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+147        </provider>
+148
+149        <uses-library
+149-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+150            android:name="androidx.window.extensions"
+150-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+151            android:required="false" />
+151-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+152        <uses-library
+152-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+153            android:name="androidx.window.sidecar"
+153-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+154            android:required="false" />
+154-->[androidx.window:window:1.0.0] C:\Users\USER\AndroidStudioProjects\MyApplication2\caches\transforms-3\a35f43c2a7382f188420295aaba4b3f2\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+155    </application>
+156
+157</manifest>
