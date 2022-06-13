@@ -48,12 +48,12 @@
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\activity_profile_edit.xml"
     },
     {
-        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_kat_kere_hore.xml.flat",
-        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable-v24\\kat_kere_hore.xml"
-    },
-    {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_foto_profile_background.xml.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable\\foto_profile_background.xml"
+    },
+    {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_kat_kere_hore.xml.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable-v24\\kat_kere_hore.xml"
     },
     {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_home.xml.flat",
@@ -184,12 +184,12 @@
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_kat_makanan_ringan.xml.flat",
-        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable-v24\\kat_makanan_ringan.xml"
-    },
-    {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_foto_profile_round.png.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\mipmap-xxxhdpi\\foto_profile_round.png"
+    },
+    {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_kat_makanan_ringan.xml.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\drawable-v24\\kat_makanan_ringan.xml"
     },
     {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -308,12 +308,12 @@
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\layout\\activity_reset_password.xml"
     },
     {
-        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_foto_profile.png.flat",
         "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\mipmap-xxxhdpi\\foto_profile.png"
+    },
+    {
+        "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Project android\\uts\\cookost\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "D:\\Project android\\uts\\cookost\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",

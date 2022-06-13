@@ -30,13 +30,21 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import java.net.URI;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class UploadFragment extends Fragment {
     Button Upload, PilihFoto;
     EditText NamaResep, Deskripsi, Bahan,Langkah;
     ImageView arrowback,upFoto;
+    FirebaseFirestore db;
     private static final int CAMERA_REQUEST_CODE = 200;
     private static final int STORAGE_REQUEST_CODE = 300;
     private static final int IMAGE_PICK_GALLERY_CODE = 400;
@@ -72,10 +80,11 @@ public class UploadFragment extends Fragment {
         Bahan = view.findViewById(R.id.edt_bahan);
         Langkah = view.findViewById(R.id.edt_langkah);
         PilihFoto = view.findViewById(R.id.btn_pilih);
-        String A = NamaResep.getContext().toString();
-        String B = Deskripsi.getContext().toString();
-        String C = Bahan.getContext().toString();
-        String D = Langkah.getContext().toString();
+        db = FirebaseFirestore.getInstance();
+//        String A = NamaResep.getContext().toString();
+//        String B = Deskripsi.getContext().toString();
+//        String C = Bahan.getContext().toString();
+//        String D = Langkah.getContext().toString();
         cameraPermission = new String[]{Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE};
         storagePermission = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
@@ -116,15 +125,34 @@ public class UploadFragment extends Fragment {
         Upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DataMakananAdapter b = new DataMakananAdapter(listAkhirBulan);
-                DataMakanan a = new DataMakanan();
-                a.AddMakanan(A , B, C, D);
-                b.updateReceiptsList(listAkhirBulan);
-                Upload.setText("");
-                Deskripsi.setText("");
-                Bahan.setText("");
-                Langkah.setText("");
-
+//                DataMakananAdapter b = new DataMakananAdapter(listAkhirBulan);
+//                DataMakanan a = new DataMakanan();
+//                a.AddMakanan(A , B, C, D);
+//                b.updateReceiptsList(listAkhirBulan);
+//                Upload.setText("");
+//                Deskripsi.setText("");
+//                Bahan.setText("");
+//                Langkah.setText("");
+                String namaResep = NamaResep.getText().toString();
+                String deskripsi = Deskripsi.getText().toString();
+                String bahan = Bahan.getText().toString();
+                String langkah = Langkah.getText().toString();
+                Map<String,Object> user = new HashMap<>();
+                user.put("NamaResep",namaResep);
+                user.put("Deskripsi",deskripsi);
+                user.put("Bahan",bahan);
+                user.put("Langkah",langkah);
+                db.collection("Makanan").add(user).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        Toast.makeText(getActivity(), "Berhasil Ditambahkan", Toast.LENGTH_SHORT).show();
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(getActivity(), "Tidak Berhasil Ditambahkan", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
     }
