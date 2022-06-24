@@ -88,7 +88,6 @@ public class Register extends AppCompatActivity {
                             .setValue(usera).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
-                            System.out.println("AMPE SINI WEEH");
                             if(task.isSuccessful()){
                                 Toast.makeText(Register.this,"Sudah Teregistrasi",Toast.LENGTH_LONG).show();
                                 progressBar.setVisibility(View.GONE);

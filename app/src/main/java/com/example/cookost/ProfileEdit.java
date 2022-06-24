@@ -73,7 +73,6 @@ public class ProfileEdit extends AppCompatActivity {
         spinner.setAdapter(adapter);
         arrowBack = findViewById(R.id.backFromProfile);
 
-
         arrowBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
