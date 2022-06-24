@@ -4,9 +4,13 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -30,17 +34,27 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class UploadFragment extends Fragment {
+
     Button Upload, PilihFoto;
     EditText NamaResep, Deskripsi, Bahan,Langkah;
     ImageView arrowback,upFoto;
@@ -81,10 +95,7 @@ public class UploadFragment extends Fragment {
         Langkah = view.findViewById(R.id.edt_langkah);
         PilihFoto = view.findViewById(R.id.btn_pilih);
         db = FirebaseFirestore.getInstance();
-//        String A = NamaResep.getContext().toString();
-//        String B = Deskripsi.getContext().toString();
-//        String C = Bahan.getContext().toString();
-//        String D = Langkah.getContext().toString();
+
         cameraPermission = new String[]{Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE};
         storagePermission = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
@@ -92,29 +103,33 @@ public class UploadFragment extends Fragment {
         upFoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
             }
         });
         PilihFoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
-                    if(ActivityCompat.checkSelfPermission(getContext(),Manifest.permission.READ_EXTERNAL_STORAGE)==PackageManager.PERMISSION_DENIED){
-//                        String[] permissions = {Manifest.permission.READ_EXTERNAL_STORAGE};
-//                        requestPermissions(getActivity(),String[]{Manifest.permission.READ_EXTERNAL_STORAGE},1);
-                        ActivityCompat.requestPermissions(getActivity(),
-                                new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE},
-                                1001);
+                final CharSequence[] items = {"Take Photo", "Choose From Gallery","Cancel"};
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle((getString(R.string.app_name)));
+                builder.setIcon(R.mipmap.ic_launcher);
+                builder.setItems(items,(dialog,item)->{
+                    if(items[item].equals("Take Photo")){
+                        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                        startActivityForResult(intent,10);
                     }
-                    else{
-                        pickFromGallery();
+                    else if (items[item].equals("Choose From Gallery")){
+                        Intent intent = new Intent(Intent.ACTION_PICK);
+                        intent.setType("image/*");
+                        startActivityForResult(Intent.createChooser(intent,"Select Image"),20);
                     }
-                }
-                else {
-
-                }
+                    else if(items[item].equals("Cancel")){
+                        dialog.dismiss();
+                    }
+                });
+                builder.show();
             }
         });
+
         arrowback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -125,138 +140,115 @@ public class UploadFragment extends Fragment {
         Upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                DataMakananAdapter b = new DataMakananAdapter(listAkhirBulan);
-//                DataMakanan a = new DataMakanan();
-//                a.AddMakanan(A , B, C, D);
-//                b.updateReceiptsList(listAkhirBulan);
-//                Upload.setText("");
-//                Deskripsi.setText("");
-//                Bahan.setText("");
-//                Langkah.setText("");
+
                 String namaResep = NamaResep.getText().toString();
                 String deskripsi = Deskripsi.getText().toString();
                 String bahan = Bahan.getText().toString();
                 String langkah = Langkah.getText().toString();
-                Map<String,Object> user = new HashMap<>();
-                user.put("NamaResep",namaResep);
-                user.put("Deskripsi",deskripsi);
-                user.put("Bahan",bahan);
-                user.put("Langkah",langkah);
-                db.collection("Makanan").add(user).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                    @Override
-                    public void onSuccess(DocumentReference documentReference) {
-                        Toast.makeText(getActivity(), "Berhasil Ditambahkan", Toast.LENGTH_SHORT).show();
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(getActivity(), "Tidak Berhasil Ditambahkan", Toast.LENGTH_SHORT).show();
-                    }
-                });
+
+                upload(namaResep,deskripsi,bahan,langkah);
+//                user.put("fotoMenu",upFoto);
+//                user.put("NamaResep",namaResep);
+//                user.put("Deskripsi",deskripsi);
+//                user.put("Bahan",bahan);
+//                user.put("Langkah",langkah);
+//                db.collection("Makanan").add(user).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+//                    @Override
+//                    public void onSuccess(DocumentReference documentReference) {
+//                        Toast.makeText(getActivity(), "Berhasil Ditambahkan", Toast.LENGTH_SHORT).show();
+//                    }
+//                }).addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//                        Toast.makeText(getActivity(), "Tidak Berhasil Ditambahkan", Toast.LENGTH_SHORT).show();
+//                    }
+//                });
             }
         });
     }
-    private void pickFromGallery() {
-        Intent intent =  new Intent (Intent.ACTION_PICK);
-        intent.setType("image/*");
-        startActivityForResult(intent,IMAGE_PICK_GALLERY_CODE);
+    private void saveData(String nama_resep,String deskripsi,String bahan, String langkah,String Foto){
+        Map<String,Object> user = new HashMap<>();
+        user.put("foto",Foto);
+        user.put("NamaResep",nama_resep);
+        user.put("Deskripsi",deskripsi);
+        user.put("Bahan",bahan);
+        user.put("Langkah",langkah);
+        db.collection("Makanan").add(user).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+            @Override
+            public void onSuccess(DocumentReference documentReference) {
+                Toast.makeText(getActivity(), "Berhasil Ditambahkan", Toast.LENGTH_SHORT).show();
 
-    }
-//    private void showImagePick() {
-//        String [] options = {"Camera","Gallery"};
-//        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-//        builder.setTitle("Pick Image").setItems(options, new DialogInterface.OnClickListener() {
-//            @Override
-//            public void onClick(DialogInterface dialog, int i) {
-//                if(i==0){
-//                    if(checkCameraPermission()){
-//                        pickFromCamera();
-//                    }
-//                    else{
-//                        requestCameraPermission();
-//                    }
-//                }
-//                else{
-//                    if(checkStoragePermission()){
-//                        pickFromGallery();
-//                    }
-//                    else{
-//                        requestStoragePermission();
-//                    }
-//                }
-//            }
-//        });
-//    }
-    private void pickFromCamera(){
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(MediaStore.Images.Media.TITLE,"image_title");
-        contentValues.put(MediaStore.Images.Media.DESCRIPTION,"image_desc");
-        image_uri = getActivity().getApplicationContext().getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,contentValues);
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, image_uri);
-        startActivityForResult(intent, IMAGE_PICK_CAMERA_CODE);
-    }
-    private boolean checkStoragePermission(){
-        boolean result = ContextCompat.checkSelfPermission( getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE)==(PackageManager.PERMISSION_GRANTED);
-        return result;
-    }
-//    private boolean checkCameraPermission(){
-//        boolean result = ContextCompat.checkSelfPermission( getActivity(), Manifest.permission.CAMERA)==(PackageManager.PERMISSION_GRANTED);
-//
-//        boolean result1 = ContextCompat.checkSelfPermission( getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE)==(PackageManager.PERMISSION_GRANTED);
-//        return result && result1;
-//    }
-//    private void requestStoragePermission(){
-//        ActivityCompat.requestPermissions(getActivity(),storagePermission,STORAGE_REQUEST_CODE);
-//    }
-//    private void requestCameraPermission(){
-//        ActivityCompat.requestPermissions(getActivity(),cameraPermission,CAMERA_REQUEST_CODE);
-//    }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(getActivity(), "Tidak Berhasil Ditambahkan", Toast.LENGTH_SHORT).show();
 
-//    @Override
-//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-//        switch (requestCode){
-//            case CAMERA_REQUEST_CODE:{
-//                if(grantResults.length>0){
-//                    boolean cameraAccepted = grantResults[0]==PackageManager.PERMISSION_GRANTED;
-//                    boolean storageAccepted = grantResults[1]==PackageManager.PERMISSION_GRANTED;
-//                    if(cameraAccepted && storageAccepted){
-//                        pickFromCamera();
-//                    }
-//                    else{
-//                        Toast.makeText(getActivity(),"Membutuhkan Izin Camera dan Penyimpanan",Toast.LENGTH_LONG ).show();
-//                    }
-//                }
-//            }
-//            case STORAGE_REQUEST_CODE:{
-//                if(grantResults.length>0){
-//                    boolean storageAccepted = grantResults[1]==PackageManager.PERMISSION_GRANTED;
-//                    if(storageAccepted){
-//                        pickFromGallery();
-//                    }
-//                    else{
-//                        Toast.makeText(getActivity(),"Membutuhkan Izin Penyimpanan",Toast.LENGTH_LONG ).show();
-//                    }
-//                }
-//            }
-//
-//        }
-//        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-//    }
-
+            }
+        });
+    }
+private void upload(String nama_resep,String deskripsi,String bahan, String langkah){
+        upFoto.setDrawingCacheEnabled(true);
+        upFoto.buildDrawingCache();
+        Bitmap bitmap = ((BitmapDrawable) upFoto.getDrawable()).getBitmap();
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG,100,byteArrayOutputStream);
+        byte[]data = byteArrayOutputStream.toByteArray();
+        FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
+        StorageReference reference = firebaseStorage.getReference("images").child(new Date().getTime()+".jpeg");
+        UploadTask uploadTask = reference.putBytes(data);
+        uploadTask.addOnFailureListener(new OnFailureListener() {
+        @Override
+        public void onFailure(@NonNull Exception e) {
+        }
+    }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+        @Override
+        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+            if(taskSnapshot.getMetadata()!=null){
+                if(taskSnapshot.getMetadata().getReference()!=null){
+                    taskSnapshot.getMetadata().getReference().getDownloadUrl().addOnCompleteListener(new OnCompleteListener<Uri>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Uri> task) {
+                            if(task.getResult()!=null){
+                                saveData(nama_resep,deskripsi,bahan,langkah,task.getResult().toString());
+                            }
+                        }
+                    });
+                }
+            }
+        }
+    });
+}
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if(resultCode == Activity.RESULT_OK){
-            if(requestCode == IMAGE_PICK_GALLERY_CODE){
-                image_uri = data.getData();
-                upFoto.setImageURI(image_uri);
-            }
-            else if(requestCode == IMAGE_PICK_CAMERA_CODE){
-
-                upFoto.setImageURI(image_uri);
-            }
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==20 && resultCode==Activity.RESULT_OK && data !=null){
+            final Uri path = data.getData();
+            Thread thread = new Thread(()->{
+                try{
+                    Context applicationContext = Home.getContextOfApplication();
+                    InputStream inputStream = getActivity().getApplicationContext().getContentResolver().openInputStream(path);
+                    Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+                    upFoto.post(()->{
+                        upFoto.setImageBitmap(bitmap);
+                    });
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+            });
+            thread.start();
 
         }
-        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==10&&resultCode==Activity.RESULT_OK){
+            final Bundle extras = data.getExtras();
+            Thread thread = new Thread(()->{
+               Bitmap bitmap = (Bitmap) extras.get("data");
+                upFoto.post(()->{
+                    upFoto.setImageBitmap(bitmap);
+                });
+            });
+            thread.start();
+        }
+
     }
 }

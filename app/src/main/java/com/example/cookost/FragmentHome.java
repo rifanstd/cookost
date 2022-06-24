@@ -16,9 +16,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
@@ -32,9 +35,13 @@ public class FragmentHome extends Fragment {
     ImageView profilePhoto;
     private FirebaseFirestore firebaseFirestore;
 
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private CollectionReference notebookRef = db.collection("Makanan");
+    private FoodAdapter adapter;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override
@@ -44,10 +51,10 @@ public class FragmentHome extends Fragment {
         View view  = inflater.inflate(R.layout.fragment_home, container, false);
         categoryRecylerView = view.findViewById(R.id.rv_data_kategori);
         categoryRecylerView.setLayoutManager(new LinearLayoutManager(view.getContext(), RecyclerView.HORIZONTAL, false));
+        rvAkhirBulan = view.findViewById(R.id.rv_data_akhir_bulan);
+        rvAkhirBulan.setLayoutManager(new LinearLayoutManager(view.getContext(), RecyclerView.HORIZONTAL, false));
+        profilePhoto = view.findViewById(R.id.profile_photo);
         List<CategoryModel> categoryModelList =  new ArrayList<CategoryModel>();
-//        categoryModelList.add(new CategoryModel("link","Makanan Ringan"));
-//        categoryModelList.add(new CategoryModel("link","Makanan Hemat"));
-//        categoryModelList.add(new CategoryModel("link","Makanan Berat"));
         categoryAdapter = new CategoryAdapter(categoryModelList);
         categoryRecylerView.setAdapter(categoryAdapter);
         categoryAdapter.notifyDataSetChanged();
@@ -66,44 +73,43 @@ public class FragmentHome extends Fragment {
                 }
             }
         });
+
         return view;
+
+
     }
+
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-        profilePhoto = view.findViewById(R.id.profile_photo);
-        rvAkhirBulan = view.findViewById(R.id.rv_data_akhir_bulan);
-        listAkhirBulan.addAll(DataMakanan.getListMakanan());
-
         showRecyclerListMakanan();
 
-
-
-        rvAkhirBulan = view.findViewById(R.id.rv_data_akhir_bulan);
-        rvAkhirBulan.setHasFixedSize(true);
-        rvAkhirBulan.setLayoutManager(new LinearLayoutManager(view.getContext(), RecyclerView.HORIZONTAL, false));
-
-        profilePhoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Profile.class);
-                getActivity().startActivity(intent);
-            }
-        });
     }
 
 
     private void showRecyclerListMakanan(){
-        DataMakananAdapter AkhirBulanAdapter = new DataMakananAdapter(listAkhirBulan);
-        rvAkhirBulan.setAdapter(AkhirBulanAdapter);
-        AkhirBulanAdapter.setOnItemClickCallback(new DataMakananAdapter.OnItemClickCallback() {
-            @Override
-            public void onItemClicked(SetGetMakanan data) {
-                showSelectedMakanan(data);
-            }
-        });
+        Query query = notebookRef.orderBy("NamaResep",Query.Direction.ASCENDING);
+        FirestoreRecyclerOptions<Food>options = new FirestoreRecyclerOptions.Builder<Food>()
+                .setQuery(query,Food.class)
+                .build();
+        adapter = new FoodAdapter(options);
+        rvAkhirBulan.setHasFixedSize(true);
+        rvAkhirBulan.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        adapter.startListening();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        adapter.stopListening();
     }
 
     private void showSelectedMakanan(SetGetMakanan data) {

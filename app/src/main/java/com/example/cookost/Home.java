@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -18,11 +19,16 @@ public class Home extends AppCompatActivity {
     ImageView  profilePhoto;
     private Toolbar toolbar_home,toolbar_setting,toolbar_upload;
     BottomNavigationView bottomNavigationView;
-
+    public static Context contextOfApplication;
+    public static Context getContextOfApplication()
+    {
+        return contextOfApplication;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        contextOfApplication = getApplicationContext();
         profilePhoto = (ImageView) findViewById(R.id.profile_photo);
         toolbar_home = findViewById(R.id.cookost_toolbar);
         setSupportActionBar(toolbar_home);
