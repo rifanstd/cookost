@@ -17,7 +17,6 @@ public class User {
     }
     public User (String username, String nama,String who,String bio,String instagram,String facebook){
         this.username = username;
-        this.email = email;
         this.nama = nama;
         this.who = who;
         this.bio = bio;

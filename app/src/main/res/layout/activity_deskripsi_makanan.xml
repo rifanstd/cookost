@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentProfile">
+    tools:context=".DeskripsiMakanan">
 
   <LinearLayout
       android:layout_width="match_parent"
@@ -44,74 +44,6 @@
             android:paddingTop="20dp"
             android:textColor="@color/kuning"
             android:textSize="20dp" />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="355dp"
-            android:layout_height="78dp"
-            app:cardBackgroundColor="@color/kuning"
-            app:cardCornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.285"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.431">
-
-          <androidx.constraintlayout.widget.ConstraintLayout
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/img_profil"
-                android:layout_width="88dp"
-                android:layout_height="82dp"
-                android:layout_gravity="right"
-                android:adjustViewBounds="true"
-                android:padding="5dp"
-                android:paddingLeft="100dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0"
-                tools:src="@tools:sample/avatars" />
-
-            <TextView
-                android:id="@+id/desc_tv_id_pengupload"
-                android:layout_width="190dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/poppins_bold"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.851"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.266" />
-
-            <TextView
-                android:id="@+id/desc_tv_id_lokasi"
-                android:layout_width="190dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/poppins_bold"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.851"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.75" />
-
-          </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
 
         <TextView
             android:layout_width="match_parent"

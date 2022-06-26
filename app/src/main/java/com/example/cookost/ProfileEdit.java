@@ -28,8 +28,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -47,6 +50,8 @@ public class ProfileEdit extends AppCompatActivity {
     private static final int PERMISSION_CODE = 1000;
     private Uri image_uri;
     private StorageReference storageReference;
+    private FirebaseUser user;
+    private DatabaseReference reference;
 
 
     @Override
@@ -65,12 +70,21 @@ public class ProfileEdit extends AppCompatActivity {
         Facebook = (EditText) findViewById(R.id.edt_facebook);
         Save = (Button) findViewById(R.id.btn_save);
 
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        reference = FirebaseDatabase.getInstance("https://cookost-5cd89-default-rtdb.asia-southeast1.firebasedatabase.app").getReference().child("Users");
+        userID = user.getUid();
+        StorageReference profileRef = storageReference.child("Users/"+authProfile.getCurrentUser().getUid()+"/profile.jpg");
+        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Picasso.get().load(uri).into(img);
+            }
+        });
 
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner_who);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.list_who, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+
         arrowBack = findViewById(R.id.backFromProfile);
 
         arrowBack.setOnClickListener(new View.OnClickListener() {
@@ -79,11 +93,35 @@ public class ProfileEdit extends AppCompatActivity {
                 switchActivitiesToHome();
             }
         });
-        StorageReference profileRef = storageReference.child("Users/"+authProfile.getCurrentUser().getUid()+"/profile.jpg");
-        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+        StorageReference profileRefe = storageReference.child("Users/"+authProfile.getCurrentUser().getUid()+"/profile.jpg");
+        profileRefe.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
                 Picasso.get().load(uri).into(img);
+            }
+        });
+        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                User userProfile = snapshot.getValue(User.class);
+                if(userProfile != null){
+                    String Username1 = userProfile.username;
+                    String Nama1 = userProfile.nama;
+                    String Bio1 = userProfile.bio;
+                    String Facebook1 = userProfile.facebook;
+                    String Instagram1 = userProfile.instagram;
+
+                    Username.setText(Username1);
+                    Nama.setText(Nama1);
+                    Bio.setText(Bio1);
+                    Facebook.setText(Facebook1);
+                    Instagram.setText(Instagram1);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(ProfileEdit.this,"Terdapat Kesalahan, Mohon Coba lagi",Toast.LENGTH_LONG).show();
             }
         });
         Save.setOnClickListener(new View.OnClickListener() {

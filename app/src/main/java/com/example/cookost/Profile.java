@@ -49,7 +49,6 @@ public class Profile extends AppCompatActivity {
         img = (ImageView) findViewById(R.id.image) ;
         TVusername = (TextView) findViewById(R.id.edt_username);
         TVNama = (TextView) findViewById(R.id.edt_name);
-        TVWho = (TextView) findViewById(R.id.spinner_who);
         TVBio = (TextView) findViewById(R.id.edt_bio);
         TVInstagram = (TextView) findViewById(R.id.edt_instagram);
         TVFacebook = (TextView) findViewById(R.id.edt_facebook)  ;
@@ -85,7 +84,6 @@ public class Profile extends AppCompatActivity {
                     TVusername.setText(Username);
                     TVNama.setText(Nama);
                     TVBio.setText(Bio);
-                    TVWho.setText(Who);
                     TVFacebook.setText(Facebook);
                     TVInstagram.setText(Instagram);
                 }

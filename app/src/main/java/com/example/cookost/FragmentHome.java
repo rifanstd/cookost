@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +21,7 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -34,10 +36,11 @@ public class FragmentHome extends Fragment {
     private CategoryAdapter categoryAdapter;
     ImageView profilePhoto;
     private FirebaseFirestore firebaseFirestore;
-
+    private static int total=0;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private CollectionReference notebookRef = db.collection("Makanan");
     private FoodAdapter adapter;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,6 +60,7 @@ public class FragmentHome extends Fragment {
         List<CategoryModel> categoryModelList =  new ArrayList<CategoryModel>();
         categoryAdapter = new CategoryAdapter(categoryModelList);
         categoryRecylerView.setAdapter(categoryAdapter);
+
         categoryAdapter.notifyDataSetChanged();
         firebaseFirestore = FirebaseFirestore.getInstance();
         firebaseFirestore.collection("KATEGORI").orderBy("index").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -74,6 +78,7 @@ public class FragmentHome extends Fragment {
             }
         });
 
+
         return view;
 
 
@@ -85,19 +90,55 @@ public class FragmentHome extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         showRecyclerListMakanan();
-
+        profilePhoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switchActivitiesToHome();
+            }
+        });
     }
-
+    private void switchActivitiesToHome() {
+        Intent i = new Intent(getContext(), Profile.class);
+        startActivity(i);
+    }
 
     private void showRecyclerListMakanan(){
         Query query = notebookRef.orderBy("NamaResep",Query.Direction.ASCENDING);
         FirestoreRecyclerOptions<Food>options = new FirestoreRecyclerOptions.Builder<Food>()
                 .setQuery(query,Food.class)
                 .build();
+
         adapter = new FoodAdapter(options);
         rvAkhirBulan.setHasFixedSize(true);
         rvAkhirBulan.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
+        db.collection("Makanan").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    int count = 0;
+                    for (DocumentSnapshot document : task.getResult()) {
+                        count++;
+                    }
+                    Log.d("TAG", count + "");
+                    count = count + 1;
+                    total = count;
+                } else {
+                }
+            }
+        });
+        adapter.setOnItemClickListener(new FoodAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(DocumentSnapshot documentSnapshot, int position) {
+                total = total * 100;
+                adapter.notifyItemRangeRemoved(0,total);
+                Food food = documentSnapshot.toObject(Food.class);
+                String id = documentSnapshot.getId();
+                String namaResep = documentSnapshot.get("NamaResep").toString();
+//                Toast.makeText(getContext(), "Posisi " + position + " ID "+ id +" Resep " + namaResep, Toast.LENGTH_SHORT).show();
+                showSelectedMakanan(food);
+                System.out.println("hasilnya = "+total);
+            }
+        });
     }
 
     @Override
@@ -112,16 +153,13 @@ public class FragmentHome extends Fragment {
         adapter.stopListening();
     }
 
-    private void showSelectedMakanan(SetGetMakanan data) {
+    private void showSelectedMakanan(Food data) {
         Intent i = new Intent(getContext(), DeskripsiMakanan.class);
-        i.putExtra("foto_makanan", data.getFotoMakanan());
-        i.putExtra("judul",data.getNamaMakanan());
-        i.putExtra("foto_pengupload",data.getFotoProfil());
-        i.putExtra("nama_pengupload",data.getPenguploadMakanan());
-        i.putExtra("lokasi_pengupload",data.getLokasiPenguploadMakanan());
-        i.putExtra("deskripsi",data.getDeskripsiMakanan());
-        i.putExtra("bahan",data.getBahanMakanan());
-        i.putExtra("langkah", data.getLangkahMakanan());
+        i.putExtra("foto", data.getFoto());
+        i.putExtra("NamaResep",data.getNamaResep());
+        i.putExtra("Langkah",data.getLangkah());
+        i.putExtra("Deskripsi",data.getDeskripsi());
+        i.putExtra("Bahan",data.getBahan());
         startActivity(i);
     }
 

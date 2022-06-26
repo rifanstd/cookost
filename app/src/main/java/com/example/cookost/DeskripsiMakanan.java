@@ -8,12 +8,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+
 import java.util.ArrayList;
 
 public class DeskripsiMakanan extends AppCompatActivity {
     private ImageView fotoMakanan;
     private ImageView fotoPengupload;
-    private TextView judul, deskripsi,bahan, langkah, namaPengupload, lokasiPengupload;
+    private TextView nama_resep, deskripsi,bahan, langkah, namaPengupload, lokasiPengupload;
     ImageView arrowback;
     private ArrayList<SetGetMakanan> listAkhirBulan = new ArrayList<>();
 
@@ -22,30 +25,25 @@ public class DeskripsiMakanan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deskripsi_makanan);
         fotoMakanan = findViewById(R.id.desc_foto_makanan);
-        fotoPengupload = findViewById(R.id.img_profil);
-        judul = findViewById(R.id.desc_judul);
+        nama_resep = findViewById(R.id.desc_judul);
         deskripsi = findViewById(R.id.tv_deskripsi);
         bahan = findViewById(R.id.tv_bahan);
         langkah = findViewById(R.id.tv_langkah);
-        namaPengupload = findViewById(R.id.desc_tv_id_pengupload);
-        lokasiPengupload = findViewById(R.id.desc_tv_id_lokasi);
+
 
         Bundle covers = getIntent().getExtras();
         Bundle cover = getIntent().getExtras();
-        int foto_makanan = covers.getInt("foto_makanan");
-        int foto_profil = cover.getInt("foto_pengupload");
-        String JUDUL = getIntent().getStringExtra("judul");
-        String DESC = getIntent().getStringExtra("deskripsi");
-        String NAMA_PENGUPLOAD = getIntent().getStringExtra("nama_pengupload");
-        String LOKASI_PENGUPLOAD = getIntent().getStringExtra("lokasi_pengupload");
-        String BAHAN = getIntent().getStringExtra("bahan");
-        String LANGKAH = getIntent().getStringExtra("langkah");
+        String link = getIntent().getStringExtra("foto");
+        int foto_makanan = covers.getInt("foto");
+        setFoodIcon(link);
+        String JUDUL = getIntent().getStringExtra("NamaResep");
+        String DESC = getIntent().getStringExtra("Deskripsi");
+        String BAHAN = getIntent().getStringExtra("Bahan");
+        String LANGKAH = getIntent().getStringExtra("Langkah");
 
-        fotoMakanan.setImageResource(foto_makanan);
-        fotoPengupload.setImageResource(foto_profil);
-        namaPengupload.setText(NAMA_PENGUPLOAD);
-        lokasiPengupload.setText(LOKASI_PENGUPLOAD);
-        judul.setText(JUDUL);
+
+
+        nama_resep.setText(JUDUL);
         deskripsi.setText(DESC);
         bahan.setText(BAHAN);
         langkah.setText(LANGKAH);
@@ -60,5 +58,8 @@ public class DeskripsiMakanan extends AppCompatActivity {
     private void switchActivitiesToHome() {
         Intent i = new Intent(this, Home.class);
         startActivity(i);
+    }
+    private void setFoodIcon(String iconUrl){
+        Glide.with(this).load(iconUrl).apply(new RequestOptions().placeholder(R.drawable.kat_kere_hore)).into(fotoMakanan);
     }
 }
